@@ -1,0 +1,115 @@
+,Checking Points,Tools (Case File Tabs),Real Logic or Question in Mind,Ni's input,Jia's input,Munmi's Answer
+,"1. Account Number: Use the account number to check for any linked accounts that have similar pharma restrictions with credit Transactions within a 3-year period.
+
+2. Business URL: Helps identify if the account is associated with a shell website or any pharma-related links.
+
+3. Email ID and PayPal.me slug: Helps identify the individual or any pharma-related indications, e.g., ceo.scorphealthcare@gmail.com.
+
+4. Address: Helps to check the common states that part of pharma violation such as in India it is Uttar Pradesh, Gujarat, Maharashtra.
+
+5. Account Status: To check any limitations already present on the account.
+
+6. Compliance Level: Helps determine if the account is verified.
+
+7. Total Amount Received: to have better focused approach, check the total amount received and if it indicates transaction activity on the account with values, then taken into consideration. If no transactions are received, the account can be eliminated from the review.
+",Summary,"1. Provide a list of linked accounts that have similar pharmaceutical violations and credit transactions within a 3-year period.
+
+2. Perform a URL/web inspection to identify any violating products being sold on the site.
+
+3. Highlight any pharmaceutical-related terminology or verbiage in the email or PayPal.me slug.
+
+4. Verify if any highly concentrated states are involved, such as Uttar Pradesh.
+
+5. Check if there are any limitation on the account .
+
+6. Confirm whether the account CIP has been completed.
+
+7. Provide the total amount received.","Checking Points / Questions in mind
+1. Yes. 
+2. Shell Website - Out of Scope. Web Inspection Check to see if any Pharma/Drug Risk
+3. Yes. 
+4. Yes.
+5. Yes.. Current and Previous Limitation
+6.Yes.
+
+
+","1. Provide a list of linked accounts that have similar pharmaceutical violations and credit transactions within a 3-year period. Can you provide some examples of the pharmaceutical violations, or how we can define them?
+2. Perform a URL/web inspection to identify any violating products being sold on the site.
+3. Highlight any pharmaceutical-related terminology or verbiage in the email or PayPal.me slug.  What is paypal.me slug. Share as much examples of the email and paypal.me slug as possible.
+4. Verify if any highly concentrated states are involved, such as Uttar Pradesh. Is the states information in current casefile?
+5. Check if there are any limitation on the account . Does it mean unlifted limitation?
+6. Confirm whether the account CIP has been completed. Any examples on the definition?
+7. Provide the total amount received. What's the target account(s)?",
+,"1. Transactional Amount Range (typically range from 100 USD to 750 USD) and Counterparty Countries: To observe the common pharma patterns, e.g., righ ration of countries such as US, AU, GB, CA
+
+2. Transaction Notes: It helps identify drug substances or drug-related sales and websites via transaction notes/item titles, etc. e.g., ""tablets, meds, prescription, ivermectin, medi, pills, iverguard, mg, Iv, vits, Medicine, Vitamins, Zopicone, box, pregagesic, Rybelsus, Health products, iver, Medication, vitenmens, Health care, Sidelnafil, Sildenifil Oral Jelly, packs, cream, premethenrin, Albendazole, Medical, strips, Glyxambi, Cenforce, supplements, heath, herbal, herb, medical, rx, Taladafil, tab, Tamsulosin, diabetes, treatment, weight loss, Iverjohn, Vidalista, sildenafil Citrate, supplements, Injection, Inhaler""
+
+3. URL Link: Supports checking the sales venue if any.
+
+4. Buyer Overlap Accounts: Confirms activity linked to previously restricted or reported pharma-related sellers.",Transactions,"1. Provide the transaction ID where violations related to pharmaceuticals can be identified via transaction notes.
+
+2. Direct me to the pharmaceutical database to check the substance details associated with the transaction note.
+
+3. Inspect the webpage for the provided URL and list the top five violating items sold on that website, prioritizing them based on the level of harm.
+Additionally, transaction URL link can be augmented with FPTI/Fraudnet data.
+
+4. Identify any accounts with buyer overlap and provide a list of pharmaceutical sellers with buyer overlap, including the percentage of this overlap.
+
+5. Calculate the total amount received (including only parent and completed/reversed transactions) over the past three years or 120 days, and convert the total received amounts from local currency/USD to INR.
+
+6. List the names of the top five countries of the counterparties in the transactions.","Checking Points 
+1. Yes
+2. Yes.
+3. Web Inspection can tell sales venue? Currently no, does it means the sales venue is the website with pharma/drugs violation?
+4. Yes.
+
+Questions in mind
+1. Yes. (note got response previous Adult Typology result not accurate) (+1)
+2. Can automatcially check Pharma database, but maybe large effort.   (keyword match can, but exactly match,  LLM based may be time consuming)
+3. Web Inspection, can use Pharma Database to check the level of harm. FPTI and Fraudnet will be new source for web inspection in the future.
+4.Yes. What does 'Any accounts' mean here?
+5.Yes.
+6. Yes","1. Provide the transaction ID where violations related to pharmaceuticals can be identified via transaction notes.
+
+2. Direct me to the pharmaceutical database to check the substance details associated with the transaction note.
+
+3. Inspect the webpage for the provided URL and list the top five violating items sold on that website, prioritizing them based on the level of harm.
+Additionally, transaction URL link can be augmented with FPTI/Fraudnet data.  Not supported in MVP.
+
+4. Identify any accounts with buyer overlap and provide a list of pharmaceutical sellers with buyer overlap, including the percentage of this overlap. Suggest not to cover in MVP scope.
+
+5. Calculate the total amount received (including only parent and completed/reversed transactions) over the past three years or 120 days, and convert the total received amounts from local currency/USD to INR. INR conversion TBD.
+
+6. List the names of the top five countries of the counterparties in the transactions. What's the target account(s)? all txn or seed / linking account(s) txn",
+,"1. Determine the total number of disputes, including the percentage of disputes related to INR, SNAD, or unauthorized transactions.
+
+2. Analyze dispute comments to identify any indications of drug sales. Common terms to look for include ""tablets, pills, medicine, meds, rx, supplements, etc.""
+
+3. Use dispute tools or CCI to view dispute details and take relevant screenshots of dispute IDs.",Disputes and Chargeback,"1. Provide a list of dispute IDs that indicate the sale of drugs, along with the concerning comments associated with these disputes.
+(this is to check off-platform communications in dispute documentation provided by buyer)
+
+2. Provide a link to access the concerning dispute ID.","Checking Points.
+1. Yes.
+2. Yes.
+3. Yes.Provide a link to Dispute system.",,
+,To check limitation related to BRM or SRO or GI limitation on the account to gain a better understanding of the case,Limitation,Provide the reasons for the BRM limitation and the associated case ID.,"Checking points.
+1. Yes. This should be merge with Summary #5.",,
+,"1. Review BRM cases to understand details related to the case, such as URL/sales venue if applicable, supporting documentation like LegitScript reports, case notes, or home page description.
+
+2. Review SAR cases to understand details such as SAR case ID, case status (filed, dismissed, L1 review, or linked).
+",Related cases,"1. Check if there is any SAR filing.
+2. Provide the case ID for the SAR case, a link to open the SAR case, and a list of account numbers marked as suspects in the case.
+3. Provide the classification status (suspect/ non-suspect) of the account if it is linked to any SAR case ID.
+4. Provide the BRM case ID along with a link to open the case.
+5. Summarize the BRM case, including details such as the sales venue, supporting documentation, and case notes.","Provide only link to open BRM, SAR case",,
+,Review proof of identity or invoices to identify any forgery or similarities with linked accounts. Dispute documents can provide clarity about selling activities.,Documents,"1. Verify if there is proof of identity for the account.
+2. Check if there are any invoices or dispute documents. If available, provide the link to access these documents.
+3. Analyze the documents to identify any details related to pharmaceutical violations.
+4. Detect any computerized or fabricated documents.","Provide only link to Dispute, or Document system",,
+,Review the complete financial details for withdrawals and any additional active financials to include in the disclosure narrative or take screenshot for supporting documentation.,Financials,"1. Provide the complete details of financials used for withdrawals (account number, routing/sort code, financial institution name)
+2. Provide details of any additional active financials.",Yes. No screenshot capability.,,
+,To review P2P chat/dialogue between buyer and seller,"Transaction Comments
+(currently not available in the case file)",Identify the transaction comment that includes pharmaceutical violation terminology,,,
+,,,,,,
+,,,,,,
+Overall Guideline,,,,,,
