@@ -1,0 +1,659 @@
+Message-ID: <1523568517.7.1751425394872@6b7c1c63e7dc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6_296582556.1751425394872"
+
+------=_Part_6_296582556.1751425394872
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AUP Violation Detection Implementation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AUP Violation Detection Implementation</h1>
+    <div class=3D"Section1">
+        <p>contents</p>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1751425394789 {padding: 0px;}
+div.rbtoc1751425394789 ul {list-style: none;margin-left: 0px;}
+div.rbtoc1751425394789 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1751425394789">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AUPViolationDetectionImplementation-Overview">Overview</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AUPViolationDetectionImplementation-KeyComponents">Key Comp=
+onents</a></li>
+</ul></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-ImplementationDetails">=
+Implementation Details</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AUPViolationDetectionImplementation-1.RaptorCallClientInteg=
+ration">1. RaptorCallClient Integration</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-2.TransactionAUPViolati=
+onToolClassDefinition">2. TransactionAUPViolationTool Class Definition</a><=
+/li>
+<li><a href=3D"#AUPViolationDetectionImplementation-3.HybridDetectionApproa=
+ch">3. Hybrid Detection Approach</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-4.CasefileAnalysisSuppo=
+rt">4. Casefile Analysis Support</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-5.FlexibleAPISupport">5=
+. Flexible API Support</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-6.KeywordMatchingLogic"=
+>6. Keyword Matching Logic</a></li>
+</ul></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-HowtoUsetheAUPViolation=
+Detection">How to Use the AUP Violation Detection</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AUPViolationDetectionImplementation-Option1:DirectTextAnaly=
+sis">Option 1: Direct Text Analysis</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-Option2:FullCasefileAna=
+lysis">Option 2: Full Casefile Analysis</a></li>
+</ul></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-Configuration">Configur=
+ation</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AUPViolationDetectionImplementation-EnvironmentVariables">E=
+nvironment Variables</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-CustomizationOptions">C=
+ustomization Options</a></li>
+</ul></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-BestPractices">Best Pra=
+ctices</a></li>
+<li><a href=3D"#AUPViolationDetectionImplementation-Troubleshooting">Troubl=
+eshooting</a></li>
+</ul>
+</div>
+<h2 id=3D"AUPViolationDetectionImplementation-Overview">Overview</h2>
+<p>This guide explains how to implement and use AUP (Acceptable Use Policy)=
+ violation detection in our investigation mate system. The implementation a=
+llows for detecting potentially problematic transaction notes that may indi=
+cate violations in categories like weapons, pharmaceuticals, and adult cont=
+ent.</p>
+<h3 id=3D"AUPViolationDetectionImplementation-KeyComponents">Key Components=
+</h3>
+<ol start=3D"1">
+<li>
+<p><strong>TransactionAUPViolationTool</strong>: LangChain tool for AUP vio=
+lation detection</p></li>
+<li>
+<p><strong>RaptorCallClient</strong>: ML model service for classification (=
+with mock implementation for testing)</p></li>
+<li>
+<p><strong>Keyword matching</strong>: First-level filtering using predefine=
+d keyword lists</p></li>
+<li>
+<p><strong>Batch processing</strong>: Support for analyzing large transacti=
+on datasets</p></li>
+<li>
+<p><strong>Detailed reporting</strong>: Comprehensive violation statistics =
+and examples</p></li>
+</ol>
+<h2 id=3D"AUPViolationDetectionImplementation-ImplementationDetails">Implem=
+entation Details</h2>
+<h3 id=3D"AUPViolationDetectionImplementation-1.RaptorCallClientIntegration=
+">1. RaptorCallClient Integration</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">#&nbsp;Moc=
+k&nbsp;implementation&nbsp;for&nbsp;testing&nbsp;without&nbsp;actual&nbsp;s=
+ervice&nbsp;dependency
+class&nbsp;MockRaptorCallClient:
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self,&nbsp;url=3DNone,&nbsp;metho=
+d=3DNone):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.url&nbsp;=3D&nbsp;url
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.method&nbsp;=3D&nbsp;m=
+ethod
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;predict(self,&nbsp;texts,&nbsp;features):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Rule-based&nbsp;simu=
+lation&nbsp;of&nbsp;model&nbsp;predictions
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;results&nbsp;=3D&nbsp;[]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;categories&nbsp;=3D&nbsp;fe=
+atures.get("category",&nbsp;[])
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;text&nbsp;in&nbsp;=
+texts:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tex=
+t_lower&nbsp;=3D&nbsp;text.lower()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res=
+ult&nbsp;=3D&nbsp;{"label":&nbsp;"no_violation",&nbsp;"category":&nbsp;[]}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&n=
+bsp;Simple&nbsp;detection&nbsp;logic&nbsp;by&nbsp;category
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&=
+nbsp;"pharma"&nbsp;in&nbsp;categories&nbsp;and&nbsp;any(term&nbsp;in&nbsp;t=
+ext_lower&nbsp;for&nbsp;term&nbsp;in&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;["drug",&nbsp;"pill",&nbsp;"medication",&nbsp;"pharma"=
+,&nbsp;"prescription"]):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;result&nbsp;=3D&nbsp;{"label":&nbsp;"violation",&nbsp;=
+"category":&nbsp;["pharma"]}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&n=
+bsp;Similar&nbsp;checks&nbsp;for&nbsp;other&nbsp;categories...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res=
+ults.append(result)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;results</pre>
+</div>
+</div>
+<h3 id=3D"AUPViolationDetectionImplementation-2.TransactionAUPViolationTool=
+ClassDefinition">2. TransactionAUPViolationTool Class Definition</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">class&nbsp=
+;TransactionAUPViolationTool(BaseTool):
+&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;str&nbsp;=3D&nbsp;"transaction_aup_viola=
+tion_tool"
+&nbsp;&nbsp;&nbsp;&nbsp;raptor_client:&nbsp;Any&nbsp;=3D&nbsp;Field(default=
+=3DNone,&nbsp;exclude=3DTrue)
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;description:&nbsp;str&nbsp;=3D&nbsp;f"""
+&nbsp;&nbsp;&nbsp;&nbsp;Useful&nbsp;when&nbsp;you&nbsp;need&nbsp;to&nbsp;de=
+tect&nbsp;if&nbsp;transaction&nbsp;texts&nbsp;are&nbsp;related&nbsp;to&nbsp=
+;AUP&nbsp;violations&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;(weapon,&nbsp;pharma,&nbsp;drug,&nbsp;Adult&nbsp;et=
+c.).
+&nbsp;&nbsp;&nbsp;&nbsp;"""
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.raptor_client&nbsp;=3D=
+&nbsp;RaptorCallClient(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url=
+=3Dos.environ.get("RAPTOR_URL",&nbsp;""),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;met=
+hod=3D"predict"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</pre>
+</div>
+</div>
+<h3 id=3D"AUPViolationDetectionImplementation-3.HybridDetectionApproach">3.=
+ Hybrid Detection Approach</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: py; gutter: false; theme: Default" data-theme=3D"Default">def&nbsp;detect=
+_aup_violation(self,&nbsp;texts:&nbsp;list[str],&nbsp;text_type:&nbsp;str,&=
+nbsp;aup_violation_categories:&nbsp;list[str])&nbsp;-&gt;&nbsp;list:
+&nbsp;&nbsp;&nbsp;&nbsp;"""Combines&nbsp;keyword&nbsp;matching&nbsp;with&nb=
+sp;ML&nbsp;model&nbsp;predictions"""
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;1.&nbsp;Keyword&nbsp;Matching
+&nbsp;&nbsp;&nbsp;&nbsp;keyword_matches&nbsp;=3D&nbsp;aup_violation_utils.k=
+eyword_check(texts,&nbsp;aup_violation_categories)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;2.&nbsp;ML&nbsp;Model&nbsp;Prediction
+&nbsp;&nbsp;&nbsp;&nbsp;raptor_results&nbsp;=3D&nbsp;self.raptor_client.pre=
+dict(texts=3Dtexts,&nbsp;features=3D{"category":&nbsp;aup_violation_categor=
+ies})
+&nbsp;&nbsp;&nbsp;&nbsp;model_matches&nbsp;=3D&nbsp;[text&nbsp;for&nbsp;tex=
+t,&nbsp;result&nbsp;in&nbsp;zip(texts,&nbsp;raptor_results)&nbsp;if&nbsp;re=
+sult['label']&nbsp;=3D=3D&nbsp;'violation']
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;3.&nbsp;Combine&nbsp;and&nbsp;Filter&nbsp;Re=
+sults
+&nbsp;&nbsp;&nbsp;&nbsp;combined_matches&nbsp;=3D&nbsp;list(set(keyword_mat=
+ches&nbsp;+&nbsp;model_matches))
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;combined_matches</pre>
+</div>
+</div>
+<p></p>
+<h3 id=3D"AUPViolationDetectionImplementation-4.CasefileAnalysisSupport">4.=
+ Casefile Analysis Support</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">def&nbsp;a=
+nalyze_casefile_notes(self,&nbsp;casefile_path:&nbsp;str,&nbsp;aup_violatio=
+n_categories:&nbsp;list[str])&nbsp;-&gt;&nbsp;Dict[str,&nbsp;Any]:
+&nbsp;&nbsp;&nbsp;&nbsp;"""Comprehensive&nbsp;analysis&nbsp;of&nbsp;transac=
+tion&nbsp;notes&nbsp;in&nbsp;a&nbsp;casefile"""
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Load&nbsp;transaction&nbsp;data
+&nbsp;&nbsp;&nbsp;&nbsp;df&nbsp;=3D&nbsp;self.load_casefile(casefile_path)
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Extract&nbsp;and&nbsp;process&nbsp;transacti=
+on&nbsp;notes&nbsp;in&nbsp;batches
+&nbsp;&nbsp;&nbsp;&nbsp;notes_df&nbsp;=3D&nbsp;df[df['note'].notna()]
+&nbsp;&nbsp;&nbsp;&nbsp;notes&nbsp;=3D&nbsp;notes_df['note'].tolist()
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Process&nbsp;in&nbsp;batches&nbsp;for&nbsp;m=
+emory&nbsp;efficiency
+&nbsp;&nbsp;&nbsp;&nbsp;batch_size&nbsp;=3D&nbsp;100
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(0,&nbsp;len(notes),&n=
+bsp;batch_size):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;batch_notes&nbsp;=3D&nbsp;n=
+otes[i:i+batch_size]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Detection&nbsp;logic=
+&nbsp;and&nbsp;results&nbsp;aggregation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;...
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Generate&nbsp;comprehensive&nbsp;analysis&nb=
+sp;report
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=3D&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"violation_count":&nbsp;vio=
+lation_count,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_notes":&nbsp;total_n=
+otes,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"violation_percentage":&nbs=
+p;round(violation_percentage,&nbsp;2),
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"violations_by_category":&n=
+bsp;violations_by_category,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"violation_examples":&nbsp;=
+violation_examples[:10]
+&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
+</div>
+</div>
+<h3 id=3D"AUPViolationDetectionImplementation-5.FlexibleAPISupport">5. Flex=
+ible API Support</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">def&nbsp;_=
+run(
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;casefile_path:&nbsp;str&nbs=
+p;=3D&nbsp;None,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;texts:&nbsp;list[str]&nbsp;=
+=3D&nbsp;None,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text_type:&nbsp;str&nbsp;=
+=3D&nbsp;"transaction_note",
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aup_violation_categories:&n=
+bsp;list[str]&nbsp;=3D&nbsp;None
+)&nbsp;-&gt;&nbsp;dict:
+&nbsp;&nbsp;&nbsp;&nbsp;"""Run&nbsp;with&nbsp;either&nbsp;casefile&nbsp;pat=
+h&nbsp;or&nbsp;direct&nbsp;text&nbsp;analysis"""
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;casefile_path:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Full&nbsp;casefile&n=
+bsp;analysis
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self.analyze_ca=
+sefile_notes(casefile_path,&nbsp;aup_violation_categories)
+&nbsp;&nbsp;&nbsp;&nbsp;elif&nbsp;texts:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Direct&nbsp;text&nbs=
+p;analysis
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;violation_texts&nbsp;=3D&nb=
+sp;self.detect_aup_violation(texts,&nbsp;text_type,&nbsp;aup_violation_cate=
+gories)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;...</pre>
+</div>
+</div>
+<h3 id=3D"AUPViolationDetectionImplementation-6.KeywordMatchingLogic">6. Ke=
+yword Matching Logic</h3>
+<p>The implementation uses a combination of pattern matching and ML models:=
+</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">#&nbsp;Key=
+word&nbsp;matching&nbsp;example
+for&nbsp;category,&nbsp;keywords&nbsp;in&nbsp;category_keywords.items():
+&nbsp;&nbsp;&nbsp;&nbsp;category_match&nbsp;=3D&nbsp;False
+&nbsp;&nbsp;&nbsp;&nbsp;matched_kw&nbsp;=3D&nbsp;[]
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;keyword&nbsp;in&nbsp;keywords:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pattern&nbsp;=3D&nbsp;r'\b'=
+&nbsp;+&nbsp;re.escape(keyword.lower())&nbsp;+&nbsp;r'\b'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;re.search(pattern,&=
+nbsp;violation_text.lower()):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cat=
+egory_match&nbsp;=3D&nbsp;True
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mat=
+ched_kw.append(keyword)</pre>
+</div>
+</div>
+<h2 id=3D"AUPViolationDetectionImplementation-HowtoUsetheAUPViolationDetect=
+ion">How to Use the AUP Violation Detection</h2>
+<h3 id=3D"AUPViolationDetectionImplementation-Option1:DirectTextAnalysis">O=
+ption 1: Direct Text Analysis</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">#&nbsp;Imp=
+ort&nbsp;the&nbsp;tool
+from&nbsp;tools.text_aup_violation_tool&nbsp;import&nbsp;TransactionAUPViol=
+ationTool
+
+#&nbsp;Initialize&nbsp;the&nbsp;tool
+aup_tool&nbsp;=3D&nbsp;TransactionAUPViolationTool()
+
+#&nbsp;Analyze&nbsp;specific&nbsp;transaction&nbsp;texts
+texts&nbsp;=3D&nbsp;[
+&nbsp;&nbsp;&nbsp;&nbsp;"Payment&nbsp;for&nbsp;rifle&nbsp;ammunition&nbsp;a=
+nd&nbsp;hunting&nbsp;gear",
+&nbsp;&nbsp;&nbsp;&nbsp;"Monthly&nbsp;subscription&nbsp;for&nbsp;software&n=
+bsp;service",
+&nbsp;&nbsp;&nbsp;&nbsp;"Medication&nbsp;refill&nbsp;-&nbsp;prescription&nb=
+sp;drugs"
+]
+
+#&nbsp;Detect&nbsp;violations
+results&nbsp;=3D&nbsp;aup_tool._run(
+&nbsp;&nbsp;&nbsp;&nbsp;texts=3Dtexts,
+&nbsp;&nbsp;&nbsp;&nbsp;aup_violation_categories=3D["weapon",&nbsp;"pharma"=
+,&nbsp;"adult"]
+)
+
+#&nbsp;Process&nbsp;results
+print(f"Found&nbsp;{results['violation_count']}&nbsp;violations")
+for&nbsp;category,&nbsp;count&nbsp;in&nbsp;results['violations_by_category'=
+].items():
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;count&nbsp;&gt;&nbsp;0:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"-&nbsp;{category}:&=
+nbsp;{count}&nbsp;violations")</pre>
+</div>
+</div>
+<h3 id=3D"AUPViolationDetectionImplementation-Option2:FullCasefileAnalysis"=
+>Option 2: Full Casefile Analysis</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">#&nbsp;Ana=
+lyze&nbsp;an&nbsp;entire&nbsp;casefile
+results&nbsp;=3D&nbsp;aup_tool._run(
+&nbsp;&nbsp;&nbsp;&nbsp;casefile_path=3D"/path/to/master_casefile.xlsx",
+&nbsp;&nbsp;&nbsp;&nbsp;aup_violation_categories=3D["weapon",&nbsp;"pharma"=
+,&nbsp;"adult"]
+)
+
+#&nbsp;Process&nbsp;comprehensive&nbsp;results
+print(f"Analyzed&nbsp;{results['total_notes']}&nbsp;transaction&nbsp;notes"=
+)
+print(f"Found&nbsp;{results['violation_count']}&nbsp;violations&nbsp;({resu=
+lts['violation_percentage']}%)")
+
+#&nbsp;Display&nbsp;examples
+print("\nViolation&nbsp;Examples:")
+for&nbsp;example&nbsp;in&nbsp;results['violation_examples']:
+&nbsp;&nbsp;&nbsp;&nbsp;print(f"Transaction&nbsp;{example['transaction_id']=
+}:&nbsp;{example['text']}")
+&nbsp;&nbsp;&nbsp;&nbsp;print(f"Categories:&nbsp;{',&nbsp;'.join(example['c=
+ategories'])}")
+&nbsp;&nbsp;&nbsp;&nbsp;print(f"Keywords:&nbsp;{example['keywords']}")
+&nbsp;&nbsp;&nbsp;&nbsp;print("---")</pre>
+</div>
+</div>
+<h2 id=3D"AUPViolationDetectionImplementation-Configuration">Configuration<=
+/h2>
+<h3 id=3D"AUPViolationDetectionImplementation-EnvironmentVariables">Environ=
+ment Variables</h3>
+<ul>
+<li>
+<p><code>RAPTOR_URL</code>: URL for the RaptorCall ML service (optional for=
+ mock mode)</p></li>
+</ul>
+<h3 id=3D"AUPViolationDetectionImplementation-CustomizationOptions">Customi=
+zation Options</h3>
+<ul>
+<li>
+<p>Add new violation categories by extending the keyword lists in aup_viola=
+tion_utils.py</p></li>
+<li>
+<p>Adjust batch sizes for performance optimization</p></li>
+<li>
+<p>Customize detection thresholds for different levels of sensitivity</p></=
+li>
+</ul>
+<h2 id=3D"AUPViolationDetectionImplementation-BestPractices">Best Practices=
+</h2>
+<ol start=3D"1">
+<li>
+<p><strong>Start with mock implementation</strong> for development and test=
+ing</p></li>
+<li>
+<p><strong>Use batching</strong> for large casefiles to avoid memory issues=
+</p></li>
+<li>
+<p><strong>Always validate model results</strong> against keyword matches</=
+p></li>
+<li>
+<p><strong>Monitor false positive rates</strong> and adjust thresholds acco=
+rdingly</p></li>
+<li>
+<p><strong>Regularly update keyword lists</strong> to improve detection acc=
+uracy</p></li>
+</ol>
+<h2 id=3D"AUPViolationDetectionImplementation-Troubleshooting">Troubleshoot=
+ing</h2>
+<ul>
+<li>
+<p>If unexpected empty results, check if note column exists in transaction =
+sheet</p></li>
+<li>
+<p>For performance issues with large files, reduce batch size</p></li>
+<li>
+<p>Missing dependencies can be resolved by installing required packages</p>=
+</li>
+<li>
+<p>RaptorCall connection issues can be bypassed using mock implementation</=
+p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_6_296582556.1751425394872--
