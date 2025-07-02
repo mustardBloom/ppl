@@ -1,0 +1,550 @@
+Message-ID: <851951322.1.1751425202380@6b7c1c63e7dc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_128155441.1751425202361"
+
+------=_Part_0_128155441.1751425202361
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Agent API Design</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Agent API Design</h1>
+    <div class=3D"Section1">
+        <p></p>
+<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1751425202258 {padding: 0px;}
+div.rbtoc1751425202258 ul {list-style: none;margin-left: 0px;}
+div.rbtoc1751425202258 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1751425202258">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AgentAPIDesign-Endpoint">Endpoint</a></li>
+<li><a href=3D"#AgentAPIDesign-PredefinedQuestion">Predefined Question</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AgentAPIDesign-Request">Request</a></li>
+<li><a href=3D"#AgentAPIDesign-Response">Response</a></li>
+</ul></li>
+<li><a href=3D"#AgentAPIDesign-Conversation(CustomizedAnalyzer)">Conversati=
+on (Customized Analyzer)</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AgentAPIDesign-Request.1">Request</a></li>
+<li><a href=3D"#AgentAPIDesign-Response.1">Response</a></li>
+</ul></li>
+<li><a href=3D"#AgentAPIDesign-GetRawData">Get Raw Data</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AgentAPIDesign-Request.2">Request</a></li>
+<li><a href=3D"#AgentAPIDesign-Response.2">Response</a></li>
+</ul></li>
+<li><a href=3D"#AgentAPIDesign-OverviewSummary">Overview Summary</a>
+<ul class=3D"toc-indentation">
+<li><a href=3D"#AgentAPIDesign-Request.3">Request</a></li>
+<li><a href=3D"#AgentAPIDesign-Response.3">Response</a></li>
+</ul></li>
+</ul>
+</div>
+<h2 id=3D"AgentAPIDesign-Endpoint">Endpoint</h2>
+<p>Pre-prod: <a class=3D"external-link" href=3D"https://aiplatform.dev51.cb=
+f.dev.paypalinc.com/byoa/investigation-a-0dd2f" rel=3D"nofollow">https://ai=
+platform.dev51.cbf.dev.paypalinc.com/byoa/investigation-a-0dd2f</a></p>
+<p>GCP: <a class=3D"external-link" href=3D"http://10.183.163.80:8867" rel=
+=3D"nofollow">http://10.183.163.80:8867</a></p>
+<h2 id=3D"AgentAPIDesign-PredefinedQuestion"><strong>Predefined Question</s=
+trong></h2>
+<h4 id=3D"AgentAPIDesign-Request"><strong>Request</strong></h4>
+<p>https://aiplatform.dev51.cbf.dev.paypalinc.com/byoa/investigation-a-0dd2=
+f/predefined/</p>
+<p>POST /predefined/</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "predefined_questions": [
+        {
+            "id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+            "question": "question content"
+        }
+    ],
+    "seed_account_ids": [
+        "7986259900087461996"
+    ]
+}</pre>
+</div>
+</div>
+<h4 id=3D"AgentAPIDesign-Response"><strong>Response</strong></h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "summary_html": "&lt;div class=3D\"investigation-mate__summary\"&gt;The=
+ account '7986259900087461996' has received a total transaction amount of $=
+650,900.26 over the past 3 years. &lt;span style=3D\"background-color: oran=
+ge; padding: 2px 5px; border-radius: 4px;\"&gt;Large transaction volume ove=
+r a short period may require further investigation for potential AML or AUP=
+ violations.&lt;/span&gt;&lt;/div&gt;",
+    "question_and_answers": [
+        {
+            "id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+            "question": "question content",
+            "answer_html": "\n\n&lt;table id=3D\"9x7L2qKpT3\" class=3D\"inv=
+estigation-mate__table\" style=3D\"border-collapse: collapse; width: 100%; =
+padding: 10px; border: 1px solid #ccc;\"&gt;&lt;tr&gt;&lt;th style=3D\"padd=
+ing: 10px; border: 1px solid #ccc;\"&gt;Account Number&lt;/th&gt;&lt;th sty=
+le=3D\"padding: 10px; border: 1px solid #ccc;\"&gt;Time Period&lt;/th&gt;&l=
+t;th style=3D\"padding: 10px; border: 1px solid #ccc;\"&gt;Total Transactio=
+n Amount&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=3D\"padding: 10px; bor=
+der: 1px solid #ccc;\"&gt;7986259900087461996&lt;/td&gt;&lt;td style=3D\"pa=
+dding: 10px; border: 1px solid #ccc;\"&gt;Last 3 years&lt;/td&gt;&lt;td sty=
+le=3D\"padding: 10px; border: 1px solid #ccc;\"&gt;$650900.26&lt;/td&gt;&lt=
+;/tr&gt;&lt;/table&gt;"
+        }
+    ],
+    "charts": [
+        {
+            "data": [
+                {
+                    "Account Number": "7986259900087461996",
+                    "Time Period": "Last 3 years",
+                    "Total Transaction Amount": "$650900.26"
+                }
+            ],
+            "ui_model": {
+                "chart_type": "table",
+                "fields": [
+                    {
+                        "title": "Account Number",
+                        "key": "Account Number"
+                    },
+                    {
+                        "title": "Time Period",
+                        "key": "Time Period"
+                    },
+                    {
+                        "title": "Total Transaction Amount",
+                        "key": "Total Transaction Amount"
+                    }
+                ]
+            },
+            "id": "9x7L2qKpT3"
+        }
+    ]
+}</pre>
+</div>
+</div>
+<h2 id=3D"AgentAPIDesign-Conversation(CustomizedAnalyzer)"><strong>Conversa=
+tion (Customized Analyzer)</strong></h2>
+<h3 id=3D"AgentAPIDesign-Request.1"><strong>Request</strong></h3>
+<p>https://aiplatform.dev51.cbf.dev.paypalinc.com/byoa/investigation-a-0dd2=
+f/conversation/</p>
+<p>POST /conversation/</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "conversation_history": [
+        {
+            "role": "human", "message": "Highlight any pharmaceutical-relat=
+ed terminology or verbiage in the email address or PayPal.me slug of seed a=
+ccount."
+        },
+        {
+            "role": "system", "message": "&lt;p&gt;The seed account exhibit=
+s &lt;span style=3D'background-color: orange; padding: 2px 6px; border-radi=
+us: 4px;'&gt;pharmaceutical-related terminology&lt;/span&gt; in both the em=
+ail address and PayPal.me slug. Specifically, the term 'cbd' was flagged un=
+der the 'Pharma' AUP violation category.&lt;/p&gt;&lt;table id=3D'T7q9bF8kL=
+m' class=3D'investigation-mate__table' style=3D'border-collapse: collapse; =
+width: 100%;'&gt;&lt;tr style=3D'border: 1px solid #000;'&gt;&lt;th style=
+=3D'padding: 10px; border: 1px solid #000;'&gt;Field&lt;/th&gt;&lt;th style=
+=3D'padding: 10px; border: 1px solid #000;'&gt;Value&lt;/th&gt;&lt;th style=
+=3D'padding: 10px; border: 1px solid #000;'&gt;Flagged Term&lt;/th&gt;&lt;t=
+h style=3D'padding: 10px; border: 1px solid #000;'&gt;AUP Violation&lt;/th&=
+gt;&lt;/tr&gt;&lt;tr style=3D'border: 1px solid #000;'&gt;&lt;td style=3D'p=
+adding: 10px; border: 1px solid #000;'&gt;Email Address&lt;/td&gt;&lt;td st=
+yle=3D'padding: 10px; border: 1px solid #000;'&gt;cbd@gmail.com&lt;/td&gt;&=
+lt;td style=3D'padding: 10px; border: 1px solid #000;'&gt;cbd&lt;/td&gt;&lt=
+;td style=3D'padding: 10px; border: 1px solid #000; background-color: orang=
+e;'&gt;Pharma&lt;/td&gt;&lt;/tr&gt;&lt;tr style=3D'border: 1px solid #000;'=
+&gt;&lt;td style=3D'padding: 10px; border: 1px solid #000;'&gt;PayPal.me Sl=
+ug&lt;/td&gt;&lt;td style=3D'padding: 10px; border: 1px solid #000;'&gt;cbd=
+&lt;/td&gt;&lt;td style=3D'padding: 10px; border: 1px solid #000;'&gt;cbd&l=
+t;/td&gt;&lt;td style=3D'padding: 10px; border: 1px solid #000; background-=
+color: orange;'&gt;Pharma&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+        },
+        {
+            "role": "human", "message": "Provide a list of hard linked acco=
+unts that have pharmaceutical related limitations."
+        }
+    ],
+    "seed_account_ids": [
+        "7986259900087461996"
+    ]
+}</pre>
+</div>
+</div>
+<h3 id=3D"AgentAPIDesign-Response.1">Response</h3>
+<p>Normal Pass</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "summary_html": "&lt;p style=3D\"padding: 10px;\"&gt;The investigation =
+identified &lt;span style=3D\"background-color: #FFA500; padding: 2px 6px; =
+border-radius: 4px;\"&gt;1 account&lt;/span&gt; with pharmaceutical-related=
+ limitations linked to the seed account.&lt;/p&gt;",
+    "detail_html_with_charts": {
+        "html": "&lt;table id=3D\"t5g3h9b2n1\" class=3D\"investigation-mate=
+__table\" style=3D\"border-collapse: collapse; width: 100%; padding: 10px; =
+border: 1px solid #ccc; margin-bottom: 20px;\"&gt;&lt;tr&gt;&lt;th style=3D=
+\"border: 1px solid #ccc; padding: 10px;\"&gt;Account Number&lt;/th&gt;&lt;=
+th style=3D\"border: 1px solid #ccc; padding: 10px;\"&gt;Limitation Notes&l=
+t;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=3D\"border: 1px solid #ccc; padd=
+ing: 10px;\"&gt;9914765631909839986&lt;/td&gt;&lt;td style=3D\"border: 1px =
+solid #ccc; padding: 10px; background-color: #FFA500;\"&gt;it's a drug.&lt;=
+/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+        "charts": [
+            {
+                "data": [
+                    {
+                        "Account Number": "9914765631909839986",
+                        "Limitation Notes": "it's a drug."
+                    }
+                ],
+                "ui_model": {
+                    "chart_type": "table",
+                    "fields": [
+                        {
+                            "title": "Account Number",
+                            "key": "Account Number"
+                        },
+                        {
+                            "title": "Limitation Notes",
+                            "key": "Limitation Notes"
+                        }
+                    ]
+                },
+                "id": "t5g3h9b2n1"
+            }
+        ]
+    }
+}</pre>
+</div>
+</div>
+<p>Out of scope question</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "summary_html": "&lt;div&gt;I'm here to help with any questions you hav=
+e about your account or transaction details within CaseFile. If you have ot=
+her types of inquiries, I might not be able to assist directly.&lt;/div&gt;=
+",
+    "detail_html_with_charts": {
+        "html": "",
+        "charts": []
+    }
+}</pre>
+</div>
+</div>
+<h2 id=3D"AgentAPIDesign-GetRawData"><strong>Get Raw Data</strong></h2>
+<h4 id=3D"AgentAPIDesign-Request.2">Request</h4>
+<p>GET</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Default" data-theme=3D"Default">https://aipla=
+tform.dev51.cbf.dev.paypalinc.com/byoa/investigation-a-0dd2f/raw_data/?seed=
+_account_ids=3D7986259900087461996&amp;question=3Dget the top 10 sent payme=
+nts </pre>
+</div>
+</div>
+<h4 id=3D"AgentAPIDesign-Response.2">Response</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">[
+    {
+        "Txn ID": "e35dfec3f1620586",
+        "Counterparty Account Number": "3319064688321688581",
+        "USD Equivalent": "$2413.55",
+        "Local Currency Amount": "363000.00 JPY",
+        "Created Date": "2024-12-01 21:03:03"
+    },
+    {
+        "Txn ID": "fa068455fd21713f",
+        "Counterparty Account Number": "3319064688321688581",
+        "USD Equivalent": "$2194.32",
+        "Local Currency Amount": "330000.00 JPY",
+        "Created Date": "2024-12-01 21:51:55"
+    }
+]</pre>
+</div>
+</div>
+<p></p>
+<h2 id=3D"AgentAPIDesign-OverviewSummary"><strong>Overview Summary</strong>=
+</h2>
+<h4 id=3D"AgentAPIDesign-Request.3">Request</h4>
+<p>POST - /overview_summary/</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "question_details": [
+        {
+            "question": {
+                "q_id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+                "q_content": "question content",
+                "time_created": 0
+            },
+            "text": "\n\n&lt;table id=3D\"t9k2q7v5m1\" class=3D\"investigat=
+ion-mate__table\" style=3D\"border-collapse: collapse; width: 100%; border:=
+ 1px solid #000; padding: 10px;\"&gt;&lt;tr&gt;&lt;td style=3D\"padding: 10=
+px; border: 1px solid #000;\"&gt;Total transaction amount received by accou=
+nt '7986259900087461996' in the last 3 years is:&lt;/td&gt;&lt;td style=3D\=
+"padding: 10px; border: 1px solid #000;\"&gt;$650900.26&lt;/td&gt;&lt;/tr&g=
+t;&lt;/table&gt;"
+        }
+    ]
+</pre>
+</div>
+</div>
+<h4 id=3D"AgentAPIDesign-Response.3">Response</h4>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">"&lt;div&g=
+t;&lt;strong&gt;Summary:&lt;/strong&gt; The total transaction amount receiv=
+ed by account &lt;strong&gt;7986259900087461996&lt;/strong&gt; in the last =
+3 years is &lt;span style=3D\"color: orange;\"&gt;$650,900.26&lt;/span&gt;.=
+&lt;/div&gt;"</pre>
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_0_128155441.1751425202361--

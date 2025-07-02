@@ -1,0 +1,1247 @@
+Message-ID: <1317805207.3.1751425214014@6b7c1c63e7dc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_2_1833823137.1751425214011"
+
+------=_Part_2_1833823137.1751425214011
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Service API  Design</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Service API  Design</h1>
+    <div class=3D"Section1">
+        <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1751425213916 {padding: 0px;}
+div.rbtoc1751425213916 ul {list-style: none;margin-left: 0px;}
+div.rbtoc1751425213916 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1751425213916">
+<ul class=3D"toc-indentation">
+<li><a href=3D"#ServiceAPIDesign-InvestigationExecutionAPI">Investigation E=
+xecution API</a></li>
+<li><a href=3D"#ServiceAPIDesign-InvestigationSnapshotAPI">Investigation Sn=
+apshot API</a></li>
+<li><a href=3D"#ServiceAPIDesign-InvestigationSavedQuestionsAPI">Investigat=
+ion Saved Questions API</a></li>
+<li><a href=3D"#ServiceAPIDesign-InvestigationCasefileDataRetrieveAPI">Inve=
+stigation Casefile Data Retrieve API</a></li>
+<li><a href=3D"#ServiceAPIDesign-InvestigationRawDataAPI">Investigation Raw=
+ Data API</a></li>
+<li><a href=3D"#ServiceAPIDesign-InvestigationOverviewSummaryAPI">Investiga=
+tion Overview Summary API</a></li>
+<li><a href=3D"#ServiceAPIDesign-TableDesign">Table Design</a></li>
+</ul>
+</div>
+<p></p>
+<h4 id=3D"ServiceAPIDesign-InvestigationExecutionAPI">Investigation Executi=
+on API</h4>
+<p><strong>post</strong> - sync API, trigger and conversation</p>
+<p><strong>Request</strong>: v1/compliance/investigation/generate-content</=
+p>
+<div id=3D"expander-1691986273" class=3D"expand-container">
+<div id=3D"expander-control-1691986273" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">generate-content request</span>
+</div>
+<div id=3D"expander-content-1691986273" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"id":"String",  //return by BE,value like "11F0-1B5A-C57808B9-A925-F8C82=
+4DF3B0A"
+=09"accounts": [
+=09=09{
+=09=09=09"acct_id": "String",
+=09=09=09"acct_type": "String" //value like paypal
+=09=09}
+=09],
+=09"analysis_type":"String",  // value like "drug/pharma typology analyzer"
+=09"predefine_questions":[
+=09=09{
+=09=09=09"q_id": 1, //qution id
+=09=09=09"q_content": "String" //question contents
+=09=09}
+=09], // list of questions
+=09"current_question": "Q",
+=09"conversation_data": [ //value like all of conversation data &amp; resul=
+ts
+=09=09{
+=09=09=09"role": "user",
+=09=09=09"content": "String", //html
+=09=09=09"created_time": 1747839944
+=09=09},{
+=09=09=09"role": "AI",
+=09=09=09"content": "String" //html
+=09=09=09"created_time": 1747839944
+=09=09}
+=09]=20
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-1315608523" class=3D"expand-container">
+<div id=3D"expander-control-1315608523" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">generate-content response</span>
+</div>
+<div id=3D"expander-content-1315608523" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "String",
+    "contents": {
+        "summary": "String", //html
+        "question_details": [
+            {
+                "question": {
+                    "q_id": 1, //question id
+                    "q_content": "String" //question contents
+                },
+                "text": "String"
+            }
+        ],
+        "charts_data": [
+            {
+                "ui_model_id": "String",
+                "ui_model_data": [O1,O2],
+                "ui_model": Object
+            }
+        ]
+    }
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Sample Request</strong></p>
+<ul>
+<li>
+<p><strong>post - predefined questions</strong></p></li>
+</ul>
+<p>https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investigation/=
+generate-content</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "analysis_type": "drug pharma typology analyzer",
+    "predefine_questions": [
+        {
+            "q_id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+            "q_content": "question content"
+        }
+    ]
+}</pre>
+</div>
+</div>
+<p><strong>Sample Response</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "0923403e-a23b-4bc6-b277-517fecbe99c0",
+    "contents": {
+        "summary": "&lt;div&gt;&lt;span style=3D\"color: orange;\"&gt;The t=
+otal transaction amount received by account '7986259900087461996' in the la=
+st 3 years is $650,900.26. This high volume of incoming funds may indicate =
+a potential risk and warrants further investigation to ensure compliance wi=
+th anti-money laundering (AUP) policies.&lt;/span&gt;&lt;/div&gt;",
+        "question_details": [
+            {
+                "question": {
+                    "q_id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+                    "q_content": "question content",
+                    "time_created": 0
+                },
+                "text": "\n\n&lt;table id=3D\"t9k2q7v5m1\" class=3D\"invest=
+igation-mate__table\" style=3D\"border-collapse: collapse; width: 100%; bor=
+der: 1px solid #000; padding: 10px;\"&gt;&lt;tr&gt;&lt;td style=3D\"padding=
+: 10px; border: 1px solid #000;\"&gt;Total transaction amount received by a=
+ccount '7986259900087461996' in the last 3 years is:&lt;/td&gt;&lt;td style=
+=3D\"padding: 10px; border: 1px solid #000;\"&gt;$650900.26&lt;/td&gt;&lt;/=
+tr&gt;&lt;/table&gt;"
+            }
+        ],
+        "chart_data": [
+            {
+                "ui_model_id": "t9k2q7v5m1",
+                "ui_model_data": [
+                    {
+                        "Total transaction amount received by account '7986=
+259900087461996' in the last 3 years is:": "$650900.26"
+                    }
+                ],
+                "ui_model": {
+                    "chart_type": "table",
+                    "fields": [
+                        {
+                            "title": "Total transaction amount received by =
+account '7986259900087461996' in the last 3 years is:",
+                            "key": "Total transaction amount received by ac=
+count '7986259900087461996' in the last 3 years is:"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}</pre>
+</div>
+</div>
+<p><strong>Sample Request</strong></p>
+<ul>
+<li>
+<p><strong>post - conversation</strong></p></li>
+</ul>
+<p>https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investigation/=
+generate-content</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "analysis_type": "drug pharma typology analyzer",
+    "current_question": "Provide a list of hard linked accounts that have p=
+harmaceutical related limitations.",
+    "conversation_data": [
+        {
+            "role": "human",
+            "content": "Highlight any pharmaceutical-related terminology or=
+ verbiage in the email address or PayPal.me slug of seed account.",
+            "created_time": 1747839944
+        },
+        {
+            "role": "system",
+            "content": "&lt;p&gt;The seed account exhibits &lt;span style=
+=3D'background-color: orange; padding: 2px 6px; border-radius: 4px;'&gt;pha=
+rmaceutical-related terminology&lt;/span&gt; in both the email address and =
+PayPal.me slug. Specifically, the term 'cbd' was flagged under the 'Pharma'=
+ AUP violation category.&lt;/p&gt;&lt;table id=3D'T7q9bF8kLm' class=3D'inve=
+stigation-mate__table' style=3D'border-collapse: collapse; width: 100%;'&gt=
+;&lt;tr style=3D'border: 1px solid #000;'&gt;&lt;th style=3D'padding: 10px;=
+ border: 1px solid #000;'&gt;Field&lt;/th&gt;&lt;th style=3D'padding: 10px;=
+ border: 1px solid #000;'&gt;Value&lt;/th&gt;&lt;th style=3D'padding: 10px;=
+ border: 1px solid #000;'&gt;Flagged Term&lt;/th&gt;&lt;th style=3D'padding=
+: 10px; border: 1px solid #000;'&gt;AUP Violation&lt;/th&gt;&lt;/tr&gt;&lt;=
+tr style=3D'border: 1px solid #000;'&gt;&lt;td style=3D'padding: 10px; bord=
+er: 1px solid #000;'&gt;Email Address&lt;/td&gt;&lt;td style=3D'padding: 10=
+px; border: 1px solid #000;'&gt;cbd@gmail.com&lt;/td&gt;&lt;td style=3D'pad=
+ding: 10px; border: 1px solid #000;'&gt;cbd&lt;/td&gt;&lt;td style=3D'paddi=
+ng: 10px; border: 1px solid #000; background-color: orange;'&gt;Pharma&lt;/=
+td&gt;&lt;/tr&gt;&lt;tr style=3D'border: 1px solid #000;'&gt;&lt;td style=
+=3D'padding: 10px; border: 1px solid #000;'&gt;PayPal.me Slug&lt;/td&gt;&lt=
+;td style=3D'padding: 10px; border: 1px solid #000;'&gt;cbd&lt;/td&gt;&lt;t=
+d style=3D'padding: 10px; border: 1px solid #000;'&gt;cbd&lt;/td&gt;&lt;td =
+style=3D'padding: 10px; border: 1px solid #000; background-color: orange;'&=
+gt;Pharma&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;",
+            "created_time": 1747839955
+        }
+    ]
+}</pre>
+</div>
+</div>
+<p><strong>Sample Response</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "7194e54c-92f0-46ff-8dc7-b20048071cec",
+    "contents": {
+        "summary": "&lt;p&gt;The seed account &lt;strong style=3D\"color: o=
+range;\"&gt;7986259900087461996&lt;/strong&gt; has one hard-linked account =
+with &lt;span style=3D\"color: orange;\"&gt;pharmaceutical-related limitati=
+ons&lt;/span&gt;. This indicates potential &lt;span style=3D\"color: orange=
+;\"&gt;compliance risk&lt;/span&gt; due to the nature of the restriction.&l=
+t;/p&gt;",
+        "question_details": [
+            {
+                "question": {
+                    "q_content": "Provide a list of hard linked accounts th=
+at have pharmaceutical related limitations.",
+                    "time_created": 0
+                },
+                "text": "&lt;table id=3D\"a7X3k9Lm2p\" class=3D\"investigat=
+ion-mate__table\" style=3D\"border-collapse: collapse; width: 100%; border:=
+ 1px solid #ccc;\" cellpadding=3D\"10\"&gt;&lt;tr&gt;&lt;th style=3D\"borde=
+r: 1px solid #ccc; background-color: #f9f9f9; padding: 10px;\"&gt;Seed Acco=
+unt&lt;/th&gt;&lt;th style=3D\"border: 1px solid #ccc; background-color: #f=
+9f9f9; padding: 10px;\"&gt;Hard-Linked Account&lt;/th&gt;&lt;th style=3D\"b=
+order: 1px solid #ccc; background-color: #f9f9f9; padding: 10px;\"&gt;Limit=
+ation Type&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=3D\"border: 1px soli=
+d #ccc; padding: 10px;\"&gt;7986259900087461996&lt;/td&gt;&lt;td style=3D\"=
+border: 1px solid #ccc; padding: 10px;\"&gt;9914765631909839986&lt;/td&gt;&=
+lt;td style=3D\"border: 1px solid #ccc; padding: 10px; color: orange;\"&gt;=
+Pharmaceutical-related&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"
+            }
+        ],
+        "chart_data": [
+            {
+                "ui_model_id": "a7X3k9Lm2p",
+                "ui_model_data": [
+                    {
+                        "Seed Account": "7986259900087461996",
+                        "Hard-Linked Account": "9914765631909839986",
+                        "Limitation Type": "Pharmaceutical-related"
+                    }
+                ],
+                "ui_model": {
+                    "chart_type": "table",
+                    "fields": [
+                        {
+                            "title": "Seed Account",
+                            "key": "Seed Account"
+                        },
+                        {
+                            "title": "Hard-Linked Account",
+                            "key": "Hard-Linked Account"
+                        },
+                        {
+                            "title": "Limitation Type",
+                            "key": "Limitation Type"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}</pre>
+</div>
+</div>
+<p><strong>Sample Request</strong></p>
+<ul>
+<li>
+<p><strong>post - build my own</strong></p></li>
+</ul>
+<p>https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investigation/=
+generate-content</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "analysis_type": "build my own analyzer",
+    "current_question": "ddf",
+    "conversation_data": [
+        {
+            "role": "system",
+            "content": "Hello, I'm here to assist you in completing the ste=
+ps to create your own analyzer."
+        },
+        {
+            "role": "human",
+            "content": "ddf"
+        }
+    ]
+}</pre>
+</div>
+</div>
+<p><strong>Sample Response</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "a3d37323-83fa-4b03-b7ee-649c9bba62fc",
+    "contents": {
+        "summary": "&lt;div&gt;I'm here to help with any questions you have=
+ about your account or transaction details within CaseFile. If you have oth=
+er types of inquiries, I might not be able to assist directly.&lt;/div&gt;"=
+,
+        "question_details": [],
+        "chart_data": []
+    }
+}</pre>
+</div>
+</div>
+<h4 id=3D"ServiceAPIDesign-InvestigationSnapshotAPI">
+<del>Investigation Snapshot API</del></h4>
+<ol start=3D"1">
+<li>
+<p><strong>
+<del>post</del></strong>
+<del>- save snapshot</del></p></li>
+</ol>
+<p><strong>
+<del>Request</del></strong>
+<del>: v1/compliance/investigation/snapshot/save</del></p>
+<div id=3D"expander-1779800194" class=3D"expand-container">
+<div id=3D"expander-control-1779800194" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">save snapshot request</span>
+</div>
+<div id=3D"expander-content-1779800194" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"snapshot_name": "String",
+=09"snapshot_content": "String", //json String=20
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-759716061" class=3D"expand-container">
+<div id=3D"expander-control-759716061" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">save snapshot response</span>
+</div>
+<div id=3D"expander-content-759716061" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"status": "SUCCESSFUL",
+=09"description": null
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<ol start=3D"2">
+<li>
+<p><strong>
+<del>get</del></strong>
+<del>- retrieve snapshot contents</del></p></li>
+</ol>
+<p><strong>
+<del>Request</del></strong>
+<del>:v1/compliance/investigation/snapshot/get?user_id=3D**&amp;snapshot_na=
+me=3D**</del></p>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-1074224144" class=3D"expand-container">
+<div id=3D"expander-control-1074224144" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">get snapshot response</span>
+</div>
+<div id=3D"expander-content-1074224144" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"snapshot_name": "String",
+=09"snapshot_content": "String", //json string
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<ol start=3D"3">
+<li>
+<p><strong>
+<del>get</del></strong>
+<del>- history snapshot list group by user (limitation 1 month)</del></p></=
+li>
+</ol>
+<p><strong>
+<del>Request</del></strong>
+<del>: v1/compliance/investigation/snapshot/get?user_id=3D**</del></p>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-1866219700" class=3D"expand-container">
+<div id=3D"expander-control-1866219700" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">get snapshot response</span>
+</div>
+<div id=3D"expander-content-1866219700" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"snapshot_list": [
+=09=09{
+=09=09=09"name":"String",
+=09=09=09"create_time": 1273827483
+=09=09}
+=09]
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h4 id=3D"ServiceAPIDesign-InvestigationSavedQuestionsAPI">Investigation Sa=
+ved Questions API</h4>
+<ol start=3D"1">
+<li>
+<p><strong>post</strong> - save questions group by users and typology</p></=
+li>
+</ol>
+<p><strong>Request</strong>: /v1/compliance/investigation/question/save</p>
+<div id=3D"expander-816500907" class=3D"expand-container">
+<div id=3D"expander-control-816500907" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">save question request</span>
+</div>
+<div id=3D"expander-content-816500907" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"analysis_type":"String", // value like "drug/pharma typology analyzer"
+=09"question_content": "String" //which question want to saved
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-1380351227" class=3D"expand-container">
+<div id=3D"expander-control-1380351227" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">save question response</span>
+</div>
+<div id=3D"expander-content-1380351227" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"analysis_type":"String", // value like "drug/pharma typology analyzer"
+=09"questions": [
+=09=09{
+            "q_id": "**",
+=09=09=09"q_content": "String",
+            "time_created": 1743528945123
+=09=09}
+=09]
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<ol start=3D"2">
+<li>
+<p><strong>get</strong> - retrieve saved questions by users and typology</p=
+></li>
+</ol>
+<p><strong>Request</strong>: /v1/compliance/investigation/question/get?user=
+_id=3D**&amp;analysis_type=3D***</p>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-195297582" class=3D"expand-container">
+<div id=3D"expander-control-195297582" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">get question list response</span>
+</div>
+<div id=3D"expander-content-195297582" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"user_id": "String",
+=09"analysis_type":"String", // value like "drug/pharma typology analyzer"
+=09"questions": [
+=09=09{
+            "q_id": "**",
+=09=09=09"q_content": "String",
+            "time_created": 1743528945123
+=09=09}
+=09]
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<ol start=3D"3">
+<li>
+<p><strong>delete</strong> - remove saved questions</p></li>
+</ol>
+<p><strong>Request</strong>: /v1/compliance/investigation/question/delete?q=
+uestion_id=3D**</p>
+<p><strong>Response</strong>:</p>
+<div id=3D"expander-2139606707" class=3D"expand-container">
+<div id=3D"expander-control-2139606707" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">remove saved question response</span>
+</div>
+<div id=3D"expander-content-2139606707" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+=09"status": "SUCCESSFUL",
+=09"description": null
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h4 id=3D"ServiceAPIDesign-InvestigationCasefileDataRetrieveAPI">Investigat=
+ion Casefile Data Retrieve API</h4>
+<p><strong>post </strong>- casefile data include account profile and transa=
+ctions, retrieve casefile data</p>
+<p><strong>Request: </strong> /v1/compliance/investigation/retrieve-data</p=
+>
+<p>https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investigation/=
+retrieve-data</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "FCCE3A3C-3997-4E30-8272-9B09B805C4F6",
+    "accounts": [
+        "4777794806473586153"
+    ]
+}</pre>
+</div>
+</div>
+<p><strong>Response</strong>:</p>
+<p>zip file</p>
+<p></p>
+<h4 id=3D"ServiceAPIDesign-InvestigationRawDataAPI">Investigation Raw Data =
+API</h4>
+<p><strong>post</strong> - retrieve current result raw data</p>
+<p><strong>Request</strong>: v1/compliance/investigation/raw-data</p>
+<div id=3D"expander-1936627414" class=3D"expand-container">
+<div id=3D"expander-control-1936627414" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Get Raw Data Response</span>
+</div>
+<div id=3D"expander-content-1936627414" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "question": "****"
+</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Response</strong></p>
+<div id=3D"expander-668948271" class=3D"expand-container">
+<div id=3D"expander-control-668948271" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Get Raw Data Response</span>
+</div>
+<div id=3D"expander-content-668948271" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">[
+    Object,
+    Object
+]</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Sample Request</strong></p>
+<p>post - https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investi=
+gation/raw-data</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "question": "get the top 10 sent payments "
+}</pre>
+</div>
+</div>
+<p><strong>Sample Response</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">[
+    {
+        "Txn ID": "e35dfec3f1620586",
+        "USD Equivalent": 2413.55,
+        "Counterparty Account Number": "3319064688321688581",
+        "Created Date": "2024-12-01 21:03:03"
+    },
+    {
+        "Txn ID": "fa068455fd21713f",
+        "USD Equivalent": 2194.32,
+        "Counterparty Account Number": "3319064688321688581",
+        "Created Date": "2024-12-01 21:51:55"
+    }
+]</pre>
+</div>
+</div>
+<h4 id=3D"ServiceAPIDesign-InvestigationOverviewSummaryAPI">Investigation O=
+verview Summary API</h4>
+<p><strong>post</strong> - sync overview summary</p>
+<p><strong>Request</strong> : v1/compliance/investigation/overview-summary<=
+/p>
+<div id=3D"expander-1407008279" class=3D"expand-container">
+<div id=3D"expander-control-1407008279" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">overview-summary request</span>
+</div>
+<div id=3D"expander-content-1407008279" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "question_details": [
+        {
+            "question": {
+                "q_id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+                "q_content": "question content",
+                "time_created": 0
+            },
+            "text": "\n\n&lt;table id=3D\"t9k2q7v5m1\" class=3D\"investigat=
+ion-mate__table\" style=3D\"border-collapse: collapse; width: 100%; border:=
+ 1px solid #000; padding: 10px;\"&gt;&lt;tr&gt;&lt;td style=3D\"padding: 10=
+px; border: 1px solid #000;\"&gt;Total transaction amount received by accou=
+nt '7986259900087461996' in the last 3 years is:&lt;/td&gt;&lt;td style=3D\=
+"padding: 10px; border: 1px solid #000;\"&gt;$650900.26&lt;/td&gt;&lt;/tr&g=
+t;&lt;/table&gt;"
+        }
+    ]
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Response</strong></p>
+<div id=3D"expander-232231578" class=3D"expand-container">
+<div id=3D"expander-control-232231578" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">overview-summary response</span>
+</div>
+<div id=3D"expander-content-232231578" class=3D"expand-content">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">"*****"</p=
+re>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Sample Request</strong></p>
+<p>post - https://te-iaodplatform.qa.paypal.com:21777/v1/compliance/investi=
+gation/overview-summary</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "accounts": [
+        {
+            "acct_id": "7986259900087461996",
+            "acct_type": "PAYPAL"
+        }
+    ],
+    "question_details": [
+        {
+            "question": {
+                "q_id": "DRUG_PHARMA_ACCOUNT_TRANSACTION_TOTAL_3Y",
+                "q_content": "question content",
+                "time_created": 0
+            },
+            "text": "\n\n&lt;table id=3D\"t9k2q7v5m1\" class=3D\"investigat=
+ion-mate__table\" style=3D\"border-collapse: collapse; width: 100%; border:=
+ 1px solid #000; padding: 10px;\"&gt;&lt;tr&gt;&lt;td style=3D\"padding: 10=
+px; border: 1px solid #000;\"&gt;Total transaction amount received by accou=
+nt '7986259900087461996' in the last 3 years is:&lt;/td&gt;&lt;td style=3D\=
+"padding: 10px; border: 1px solid #000;\"&gt;$650900.26&lt;/td&gt;&lt;/tr&g=
+t;&lt;/table&gt;"
+        }
+    ]
+}</pre>
+</div>
+</div>
+<p><strong>Sample Response</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">"&lt;p&gt;=
+The total transaction amount received by account &lt;strong&gt;'79862599000=
+87461996'&lt;/strong&gt; in the last 3 years is &lt;strong style=3D\"color:=
+ orange;\"&gt;$650,900.26&lt;/strong&gt;. This large volume of incoming fun=
+ds may indicate a need for further scrutiny to assess whether it aligns wit=
+h the account holder's known activity profile or business model.&lt;/p&gt;"=
+</pre>
+</div>
+</div>
+<p></p>
+<h4 id=3D"ServiceAPIDesign-TableDesign">Table Design</h4>
+<p>Investigation Question Table [<code>pp_compliance_iaod.investigation_que=
+stion</code>]</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"21=
+ad0c66-55bd-4652-8e0b-73d77c3c9433" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 174.0px;">
+<col style=3D"width: 332.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Column</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Type</strong></p></th>
+<th class=3D"confluenceTh">
+<p></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>user_id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>user id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>analysis_type</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>analysis type like =E2=80=9Cdrag/pharma..=E2=80=9D</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>question_content</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>question content</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>enable</p></td>
+<td class=3D"confluenceTd">
+<p>Boolean</p></td>
+<td class=3D"confluenceTd">
+<p>question status, active or / inactive</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>time_created</p></td>
+<td class=3D"confluenceTd">
+<p>Integer</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Investigation Casefile Metadata Table [<code>pp_compliance_iaod.investig=
+ation_casefile_metadata</code>]</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"05=
+8025be-89f9-4ddd-aa10-09164059c875" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 174.0px;">
+<col style=3D"width: 332.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Column</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Type</strong></p></th>
+<th class=3D"confluenceTh">
+<p></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>unique id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>seed_report_id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>seed account report id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>linking_report_id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>linking account report id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>time_created</p></td>
+<td class=3D"confluenceTd">
+<p>Integer</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>extra_info</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+<del>Investigation Snapshot Table [investigation_snapshot]</del></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"59=
+d23843-5aff-4320-8956-34055bea166c" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 174.0px;">
+<col style=3D"width: 332.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Column</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Type</strong></p></th>
+<th class=3D"confluenceTh">
+<p></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>snapshot id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>name</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>snapshot name by user</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>user_id</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>user id</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>content</p></td>
+<td class=3D"confluenceTd">
+<p>String</p></td>
+<td class=3D"confluenceTd">
+<p>snapshot content</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>time_created</p></td>
+<td class=3D"confluenceTd">
+<p>Integer</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_2_1833823137.1751425214011
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/55ef97848a824ab5d75e88819b13b81d4dbc2b17137a98a7e0462ce674cc9230
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_2_1833823137.1751425214011--

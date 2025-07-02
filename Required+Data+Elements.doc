@@ -1,0 +1,3565 @@
+Message-ID: <878402464.5.1751425264662@6b7c1c63e7dc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_1323825623.1751425264662"
+
+------=_Part_4_1323825623.1751425264662
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Required Data Elements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Required Data Elements</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"RequiredDataElements-AccountProfile(SummaryTab)">
+<style>[data-colorid=3Doaabug4kg1]{color:#ff5630} html[data-color-mode=3Dda=
+rk] [data-colorid=3Doaabug4kg1]{color:#cf2600}</style>Account Profile (Summ=
+ary Tab)</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1730" data-layout=3D"center" data-local-id=3D"71=
+257c9c-7330-466c-a2c8-731adc1b1a76" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 442.0px;">
+<col style=3D"width: 202.0px;">
+<col style=3D"width: 1080.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Element</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Comments</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Enum Values/Examples</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Number</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>First Name</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Middle Name</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Last Name</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Primary Street Address (including city, state and zip)</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">if (Collec=
+tionUtils.isNotEmpty(userResponse.getAddress())) {
+=09for (AddressVO add : userResponse.getAddress()) {
+=09=09if (Boolean.TRUE.equals(add.getIsPrimary())) {
+=09=09=09primaryAddress =3D formatAddress(add);
+=09=09}
+=09}
+}</pre>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">=09private=
+ String formatAddress(AddressVO addressVO){
+=09=09StringBuilder sb =3D new StringBuilder();
+=09=09if (!StringUtils.isEmpty(addressVO.getAddress1())) {
+=09=09=09sb.append(addressVO.getAddress1()).append(ApplicationConstants.STR=
+ING_SPACE);
+=09=09}
+=09=09if (!StringUtils.isEmpty(addressVO.getAddress2())) {
+=09=09=09sb.append(addressVO.getAddress2()).append(ApplicationConstants.STR=
+ING_SPACE);
+=09=09}
+=09=09if (!StringUtils.isEmpty(addressVO.getCity())) {
+=09=09=09sb.append(addressVO.getCity());
+=09=09}
+=09=09final String temp =3D sb.toString().trim();
+=09=09sb.setLength(0);
+=09=09sb.append(temp);
+=09=09sb.append(ApplicationConstants.CSV_DELIMITER);
+=09=09if (!StringUtils.isEmpty(addressVO.getState())) {
+=09=09=09sb.append(addressVO.getState()).append(ApplicationConstants.STRING=
+_SPACE);
+=09=09}
+=09=09if (!StringUtils.isEmpty(addressVO.getZip())) {
+=09=09=09sb.append(addressVO.getZip()).append(ApplicationConstants.STRING_S=
+PACE);
+=09=09}
+=09=09return sb.toString();
+=09}</pre>
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Country Code</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>DOB</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Type</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>ANONYMOUS,GUEST,GUEST_PR,GUEST_BUSINESS,PERSONAL,PREMIER,BUSINESS</p></t=
+d>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Business Name</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Business URL</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Mobile Phone</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Email</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Creation Date</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Total Account Balance in USD</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Logic of setBalanceInfoVOS is in class ExchangeServiceTask</p>
+<p>Logic of chargedOffAmount is in WriskStatsTask</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">if(profile=
+InfoResponseVO.getWriskStatsEntity() !=3D null &amp;&amp;
+=09accountTagList.contains(NEGATIVE_BALANCE_CHARGED_OFF_FLAG)) {
+=09chargedOffAmount =3D profileInfoResponseVO.getWriskStatsEntity().getChar=
+gedOffUsdAmount();
+}</pre>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">if(Collect=
+ionUtils.isNotEmpty(profileInfoResponseVO.getBalanceInfoVOS())) {
+    totalAccountBalance =3D profileInfoResponseVO.getBalanceInfoVOS().strea=
+m().
+=09=09filter(bal -&gt; bal.getHoldingVO().getIsOpen()).
+=09=09=09map(BalanceInfoVO::getUsdAmount).filter(Objects::nonNull).reduce(D=
+ouble::sum).orElse(Double.valueOf(0));
+=09=09if(Objects.nonNull(chargedOffAmount)) {
+=09=09=09totalAccountBalance -=3D chargedOffAmount;
+=09=09}
+}</pre>
+</div>
+</div>
+<p></p>
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Compliance Levels</p></td>
+<td class=3D"confluenceTd">
+<p>Current definition in casefile</p>
+<p>Provides statuses of the onboarding processes and customer identificatio=
+n process. If available, provides data for the following checks</p>
+<ol start=3D"1">
+<li>
+<p>CI</p></li>
+<li>
+<p>KYC</p></li>
+<li>
+<p>TIP</p></li>
+<li>
+<p>PPVC</p></li>
+<li>
+<p>FATCA</p></li>
+<li>
+<p>FATCAIR</p></li>
+<li>
+<p>OSV</p></li>
+<li>
+<p>GST</p></li>
+</ol></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p><a class=3D"external-link" href=3D"http://paypal.me" rel=3D"nofollow">pa=
+ypal.me</a> ID</p></td>
+<td class=3D"confluenceTd">
+<p><code>paypal.me slug</code></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Total_Amount_Sent</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>WriskStatsTask</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">if(profile=
+InfoResponseVO.getWriskStatsEntity().getTotalAmtPaymentsSent() !=3D null){
+=09double dTotalAmtPaymentsSent =3D (double)profileInfoResponseVO.getWriskS=
+tatsEntity().getTotalAmtPaymentsSent() / 100;
+=09totalAmountSent =3D String.valueOf(dTotalAmtPaymentsSent);
+}</pre>
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Total_Amount_Received</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>WriskStatsTask</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">if(profile=
+InfoResponseVO.getWriskStatsEntity().getTotalAmtPaymentsReceived() !=3D nul=
+l){
+=09double dTotalAmtPaymentsReceived =3D (double)profileInfoResponseVO.getWr=
+iskStatsEntity().getTotalAmtPaymentsReceived() / 100;
+=09totalAmountReceived =3D String.valueOf(dTotalAmtPaymentsReceived);
+}</pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"expander-1164432602" class=3D"expand-container">
+<div id=3D"expander-control-1164432602" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">query sample</span>
+</div>
+<div id=3D"expander-content-1164432602" class=3D"expand-content">
+<p>link: <a class=3D"external-link" href=3D"https://www.te-iaodplatform.qa.=
+paypal.com/iaoduistorybooknodeweb/playground/graphql" rel=3D"nofollow">http=
+s://www.te-iaodplatform.qa.paypal.com/iaoduistorybooknodeweb/playground/gra=
+phql</a></p>
+<p>url: <a class=3D"external-link" href=3D"https://msmaster.qa.paypal.com:2=
+4299/v1/compliance/customerprofile/graphql" rel=3D"nofollow">https://msmast=
+er.qa.paypal.com:24299/v1/compliance/customerprofile/graphql</a></p>
+<p>variables:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+    "id": "4798118715786009681",
+    "tenantName": "PAYPAL"
+}</pre>
+</div>
+</div>
+<p>query:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">query Acco=
+untProperty($id: ID!, $tenantName: String) {
+  admin {
+    customerProfile(customerProfileInput: {id: $id, tenantName: $tenantName=
+}) {
+      id
+      account {
+        id
+        createTime
+        status
+        accountType
+      }
+      names {
+        middleName
+        surname
+        givenName
+      }
+      emails(primary: null) {
+        email
+      }
+      business {
+        businessNames(primary: true) {
+          name
+        }
+        website
+        businessCategory {
+          merchantCategoryCode
+          merchantCategoryDescription
+        }
+      }
+      complianceProcesses{
+        name
+      }
+      addresses(primary: true) {
+        address {
+          addressLine1
+          addressLine2
+          addressLine3
+          adminArea4
+          adminArea3
+          adminArea2
+          adminArea1
+          countryCode
+          postalCode
+          addressDetails {
+            streetNumber
+            streetName
+            streetType
+            deliveryService
+            buildingName
+            subBuilding
+          }
+        }
+        primary
+        active
+        addresseeName
+      }
+      paypalMe {
+        url
+      }
+      dateOfBirth
+      phoneNumbers {
+        phone {
+          countryCode
+          nationalNumber
+          extensionNumber
+        }
+      }
+      tenantName
+    }
+  }
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h3 id=3D"RequiredDataElements-Transaction">Transaction</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1478" data-layout=3D"center" data-local-id=3D"e1=
+66bb4c-3d74-46bc-a0f8-eba94209ee7a" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 1067.0px;">
+<col style=3D"width: 411.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Element</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Comments</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Platform</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Number</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Txn ID</p></td>
+<td class=3D"confluenceTd">
+<p>transactionReferenceId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Encrypted Txn ID</p></td>
+<td class=3D"confluenceTd">
+<p>transactionId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Nested Encrypted Txn ID</p></td>
+<td class=3D"confluenceTd">
+<p>parentId (encode)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Parent Txn ID</p></td>
+<td class=3D"confluenceTd">
+<p>parentReferenceId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Created Date</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>USD Equivalent (Make credits and sent payments in negative format)</p></=
+td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Local Currency Amount</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Local Currency Code</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Fee Amount</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Balance [Fiat]</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Balance Impact [Fiat]</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Transaction Type</p></td>
+<td class=3D"confluenceTd">
+<p>TBD</p>
+<p><a href=3D"/wiki/spaces/GDGRTPlatform/pages/717500659/Case+File+Transact=
+ion+Type+Definition#Transaction-Type" data-linked-resource-id=3D"717500659"=
+ data-linked-resource-version=3D"79" data-linked-resource-type=3D"page">Cas=
+e File Transaction Type &amp; Definition</a></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Status</p></td>
+<td class=3D"confluenceTd">
+<p><a href=3D"/wiki/spaces/GDGRTPlatform/pages/717500659/Case+File+Transact=
+ion+Type+Definition#Transaction-Status" data-linked-resource-id=3D"71750065=
+9" data-linked-resource-version=3D"79" data-linked-resource-type=3D"page">C=
+ase File Transaction Type &amp; Definition</a></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"0af60c61-813a-4c20-a6ec-20e=
+051d84f3d" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 393.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p>completed</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>pending</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>processing</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>refunded</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>reversed</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>denied_cancelled</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>not-classified</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>accepted</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>broadcasted</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>created</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>declined</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>mined</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>under_review</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>unexpected_error</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>credited</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>in_process</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>rejected</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>success</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>active</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>cancelled</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>suspended</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>expired</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>deleted</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>draft</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>paid</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>paid external</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>partially paid</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>partially refunded</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>payable</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>payment pending</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>refunded external</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>scheduled</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>sent</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>canceled</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>pre_acknowledged</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>acknowledged</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>new</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>denied</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>transfer_pending</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>release_pending</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Item Title</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Notes</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Referring URL</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Redirect URL</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Funding Source</p></td>
+<td class=3D"confluenceTd">
+<p>=E2=80=93 class 2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Name</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Account Number</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Account Type</p></td>
+<td class=3D"confluenceTd">
+<p>ANONYMOUS,GUEST,GUEST_PR,GUEST_BUSINESS,PERSONAL,PREMIER,BUSINESS</p></t=
+d>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Country Code</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty State</p></td>
+<td class=3D"confluenceTd">
+<p>=E2=80=93-- TBD</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Email</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Txn ID</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Funding Source</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"expander-1848877958" class=3D"expand-container">
+<div id=3D"expander-control-1848877958" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">query sample</span>
+</div>
+<div id=3D"expander-content-1848877958" class=3D"expand-content">
+<p>link: <a class=3D"external-link" href=3D"https://www.te-iaodplatform.qa.=
+paypal.com/iaoduistorybooknodeweb/playground/graphql" rel=3D"nofollow">http=
+s://www.te-iaodplatform.qa.paypal.com/iaoduistorybooknodeweb/playground/gra=
+phql</a></p>
+<p>url: <a class=3D"external-link" href=3D"https://msmaster.qa.paypal.com:1=
+5949/v1/compliance/customertransaction/graphql" rel=3D"nofollow">https://ms=
+master.qa.paypal.com:15949/v1/compliance/customertransaction/graphql</a></p=
+>
+<p>header:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+  "Paypal-Request-Id": "SH-REQ11812034175061145",
+  "PayPal-Application-Context": "eyJ4NXQjUzI1NiI6Im94T0ZQU1RtVHRXcFdOYWlRb1=
+U5Tmltc25VWjM4dXRpcUJHbFUzN3VKalEiLCJ4NXQiOiI5QUxfZWNBYU12RlFzV1RQOEswNlAwV=
+EFkRXMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1cm46cGF5cGFsLWNvbnN1bWVyaWQ6MmUyMTc=
+4YzctZjcxNy00ZTcyLWI4NDctOGM4YmU0NmY2NGMxIiwic2VjdXJpdHlfem9uZSI6IkhSWiIsIn=
+RlbmFudF9uYW1lIjoicGF5cGFsIiwiYXBwbGljYXRpb25fdHlwZSI6InJhcHRvciIsImlzcyI6I=
+mtleW1ha2VyYXBpX3BheXBhbCIsInZlcnNpb24iOiIxLjAiLCJzb2Z0X2V4cGlyeSI6dHJ1ZSwi=
+YXVkIjoiY29tcGN1c3RvbWVydHhuc2VydiIsImFwcGxpY2F0aW9uX25hbWUiOiJjb21wcmVwb3J=
+0bWdtdHNlcnYiLCJwZXJtaXNzaW9ucyI6WyJzaG93X3VuZW5jcnlwdGVkIl0sImV4cCI6MTY2Nz=
+Y0MzYzOTI4MiwiaWF0IjoxNjY3NTU3MjM5MjgyLCJqdGkiOjUwMDAwMTM0MzV9.IzzLR0IIYFe-=
+lwNm8aNAhVPj1WvmmC9jH4XDjh_Dt2-LmKhxRBGgPgTckFSnOrxZXCF4rluRAtoW4OXrH_LS8AB=
+0ok3HBBU_uysjzWTH7afR6Xk1KGpCau2lk08sKRv33CrFovFLLISe-tlEpzAyWb4epR2WrlPEf8=
+xslborA9M",
+  "PayPal-Corp-User-Context": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI=
+6ImNhd2VpIiwidXNlcl9pZCI6ImNhd2VpIiwiZmlyc3RfbmFtZSI6ImNhcnkiLCJsYXN0X25hbW=
+UiOiJ3ZWkiLCJlbWFpbF9hZGRyZXNzIjoiY2F3ZWlAcGF5cGFsLmNvbSIsIm9yZ2FuaXphdGlvb=
+iI6IlNDTSIsInRlbmFudCI6IlBheVBhbCIsImxvY2F0aW9uIjoiQ04ifQ.TrknWSFL4RAbFHZxe=
+18FBS-bvQ3AYJ7ID42EncB_pOI"
+}</pre>
+</div>
+</div>
+<p>variables:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">{
+  "accountNumber": "5073396186260962444",
+  "startDate": "2022-12-04",
+  "endDate": "2023-02-04"
+}</pre>
+</div>
+</div>
+<p>query:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">query Scra=
+tchQuery {
+  admin {
+    transactions(
+      customerTransactionInput: {accountNumber: "1629096496729055406", tena=
+ntName: "PAYPAL", startDate: "2022-05-02", endDate: "2023-05-15"}
+      pageInput: {page: 1, pageSize: 1000}
+    ) {
+      transactions {
+        party {
+          account {
+            accountNumber
+            tenantName
+          }
+          transactionId
+          parentId
+          transactionReferenceId
+          parentReferenceId
+          relatedId
+          auctionName
+        }
+        createTime
+        parentTransaction
+        amount {
+          amountUSD {
+            currencyCode
+            value
+          }
+          amount {
+            currencyCode
+            value
+          }
+        }
+        fee {
+          amountUSD {
+            currencyCode
+            value
+          }
+          amount {
+            currencyCode
+            value
+          }
+        }
+        balance {
+          currencyCode
+          value
+        }
+        balanceImpact
+        debitCreditCode
+        feeDebitCreditCode
+        status
+        type
+        items {
+          name
+          code
+          description
+        }
+        notes
+        transactionUrl {
+          referralUrl
+          redirectUrl
+        }
+        counterParty {
+          transactionId
+          fundingSource {
+            fundingInstrument {
+              name
+              type
+              issuer
+              routingNumber
+              accountNumber
+              issuerCountryCode
+            }
+          }
+          account {
+            parties {
+              name {
+                fullName
+              }
+              mailingAddress {
+                countryCode
+              }
+              email
+            }
+            accountNumber
+            accountTier
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        hasPreviousPage
+        currentPage
+        previousPage
+        nextPage
+        totalPages
+        totalItems
+      }
+    }
+  }
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<h3 id=3D"RequiredDataElements-Dispute">Dispute</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1584" data-layout=3D"center" data-local-id=3D"f0=
+ccfe37-51f8-4fb4-b5c7-5028fc06ae88" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 830.0px;">
+<col style=3D"width: 754.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Element</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Comments</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Number</p></td>
+<td class=3D"confluenceTd">
+<p>disputeapiserv</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Date</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Amount</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Trans Date</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>DR/CR</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Counterparty Covered</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Case No</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Buyer Transaction ID</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Seller Transaction ID</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Type</p></td>
+<td class=3D"confluenceTd">
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"1023d7f2-d731-4726-983a-fc6=
+f5f03b137" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 366.0px;">
+<col style=3D"width: 321.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">
+<p>DISPUTE</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>CHARGEBACK</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>ACCOUNT_DISPUTE</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>ACHRETURN</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>ALERT</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>ISSUANCE_DISPUTE</p></td>
+<td class=3D"confluenceTd">
+<p>SCM dispute type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>INTERNAL</p></td>
+<td class=3D"confluenceTd">
+<p>Old type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>EXTERNAL</p></td>
+<td class=3D"confluenceTd">
+<p>Old type</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>TECHNICAL</p></td>
+<td class=3D"confluenceTd">
+<p>Old type</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Outcome</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Notes</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Ticket URL</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Agent Info</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>dispute : <a href=3D"/wiki/spaces/GDGRTPlatform/pages/1205572886/Enhance=
+d+Dispute+Tab+in+Case+File" data-linked-resource-id=3D"1205572886" data-lin=
+ked-resource-version=3D"36" data-linked-resource-type=3D"page">Enhanced Dis=
+pute Tab in Case File</a></p>
+<h3 id=3D"RequiredDataElements-Limitation">Limitation</h3>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1426" data-layout=3D"center" data-local-id=3D"0c=
+e58188-8caa-482e-aeb2-3f819d3d9d70" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Element</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Comments</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Platform</p></td>
+<td class=3D"confluenceTd">
+<p>risklmtnlifecycleserv</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Account Number</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Limitation Type</p></td>
+<td class=3D"confluenceTd">
+<p>see below</p>
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Date Placed</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Date Lifted</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Limitation Placement Note</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Limitation Lifting Note</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Access Blocks</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Limitation Tags</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Applied By</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id=3D"expander-1136472171" class=3D"expand-container">
+<div id=3D"expander-control-1136472171" class=3D"expand-control">
+<span class=3D"expand-control-icon"><img style=3D"vertical-align:middle;" c=
+lass=3D"expand-control-image" src=3D"55ef97848a824ab5d75e88819b13b81d4dbc2b=
+17137a98a7e0462ce674cc9230" width=3D"16" height=3D"16"></span><span class=
+=3D"expand-control-text">Limitation Type</span>
+</div>
+<div id=3D"expander-content-1136472171" class=3D"expand-content">
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"8f0c359f-b8fe-470a-b83a-812=
+c703147e5" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 166.0px;">
+<col style=3D"width: 583.0px;">
+<col style=3D"width: 715.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td data-highlight-colour=3D"#b0b3b2" class=3D"confluenceTd">
+<p><strong>ID</strong></p></td>
+<td data-highlight-colour=3D"#b0b3b2" class=3D"confluenceTd">
+<p><strong><span data-colorid=3D"oaabug4kg1">NAME (Casefile download value)=
+</span></strong></p></td>
+<td data-highlight-colour=3D"#b0b3b2" class=3D"confluenceTd">
+<p><strong>Enum</strong></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>1</strong></p></td>
+<td class=3D"confluenceTd">
+<p>OPS - Batches</p></td>
+<td class=3D"confluenceTd">
+<p>OPS_BATCHES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>2</strong></p></td>
+<td class=3D"confluenceTd">
+<p>OPS - Returned SAC</p></td>
+<td class=3D"confluenceTd">
+<p>OPS_RETURNED_SAC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>3</strong></p></td>
+<td class=3D"confluenceTd">
+<p>OPS - Unauthorized DC Use</p></td>
+<td class=3D"confluenceTd">
+<p>OPS_UNAUTHORIZED_DC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>4</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Investigations</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_INVESTIGATIONS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>5</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - CHBK Unauthorized CC Use</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_CHBK_UNAUTHORIZED_CC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>6</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT - Unauthorized CC Use</p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT_UNAUTHORIZED_CC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>7</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Intermediary/Exit</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_INTERMEDIARY_EXIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>8</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - ACH in Failure</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_ACH_IN_FAILURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>9</strong></p></td>
+<td class=3D"confluenceTd">
+<p>TERMS - SPAM Report</p></td>
+<td class=3D"confluenceTd">
+<p>TERMS_SPAM_REPORT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>10</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Multiple Accounts Per User</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_MULTIPLE_ACCOUNTS_PER_USER</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>11</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Multiple CC Rejections</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_MULTIPLE_CC_REJECTIONS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>12</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Sign Up Fraud</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_SIGN_UP_FRAUD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>13</strong></p></td>
+<td class=3D"confluenceTd">
+<p>TERMS - Cash Advance</p></td>
+<td class=3D"confluenceTd">
+<p>TERMS_CASH_ADVANCE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>14</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT - Unauthorized Bank Account Use</p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT_UNAUTHORIZED_BANK_ACCOUNT_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>15</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT - Report Of Merchandise Problems</p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPT_REPORT_OF_MERCHANDISE_PROBLEMS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>16</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CHBK - Merchandise Problems</p></td>
+<td class=3D"confluenceTd">
+<p>CHBK_MERCHANDISE_PROBLEMS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>17</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Probable Unauthorized CC Use</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_PROBABLE_UNAUTHORIZED_CC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>18</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Probable Unauthorized Bank Use</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_PROBABLE_UNAUTHORIZED_BANK_ACCOUNT_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>19</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Probable Unauthorized CC Use</p></td>
+<td class=3D"confluenceTd">
+<p>PREV_PROBABLE_UNAUTHORIZED_CC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>20</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PREV - Probable Unauthorized Bank Account Use</p></td>
+<td class=3D"confluenceTd">
+<p>PREV_PROBABLE_UNAUTHORIZED_BANK_ACCOUNT_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>21</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Confirmed Stolen CC</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_CONFIRMED_STOLEN_CC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>22</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Confirmed Stolen Bank</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_CONFIRMED_STOLEN_BANK_ACCOUNT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>23</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Intermediary/Exit</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_INTERMEDIARY_EXIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>24</strong></p></td>
+<td class=3D"confluenceTd">
+<p>ProServ - Unresolved Issues</p></td>
+<td class=3D"confluenceTd">
+<p>PROSERV_UNRESOLVED_ISSUES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>25</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BUYPRO - Unconfirmed Identity</p></td>
+<td class=3D"confluenceTd">
+<p>BUYPRO_UNCONFIRMED_IDENTITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>26</strong></p></td>
+<td class=3D"confluenceTd">
+<p>TERMS - Multiple Accounts</p></td>
+<td class=3D"confluenceTd">
+<p>TERMS_MULTIPLE_ACCOUNTS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>27</strong></p></td>
+<td class=3D"confluenceTd">
+<p>OPS - Returned Check Intl</p></td>
+<td class=3D"confluenceTd">
+<p>OPS_RETURNED_CHECK_INTL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>28</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Collections - Other</p></td>
+<td class=3D"confluenceTd">
+<p>COLLECTIONS_OTHER</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>29</strong></p></td>
+<td class=3D"confluenceTd">
+<p>OPS - Bank Account Mismatch</p></td>
+<td class=3D"confluenceTd">
+<p>OPS_BANK_ACCOUNT_MISMATCH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>30</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - NSF on Check Deposit</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_NSF_ON_CHECK_DEPOSIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>31</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Reshipment</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_RESHIPMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>32</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Suspicious Account Activity</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_SUSPICIOUS_ACCOUNT_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>33</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Unauthorized Account Access</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_UNAUTHORIZED_ACCOUNT_ACCESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>34</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - High Risk Selling Activity</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_HIGH_RISK_SELLING_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>35</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Fraud Database Match</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_FRAUD_DATABASE_MATCH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>36</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Auto - Buyer Abuse</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_BUYER_ABUSE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>37</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CHGBKSELLER - Multiple Unauthorized Use</p></td>
+<td class=3D"confluenceTd">
+<p>CHGBKSELLER_MULTIPLE_UNAUTHORIZED_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>38</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Merchandise Problems</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_MERCHANDISE_PROBLEMS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>39</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPTSELLER - Multiple Unauthorized</p></td>
+<td class=3D"confluenceTd">
+<p>CUSTREPTSELLER_MULTIPLE_UNAUTHORIZED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>40</strong></p></td>
+<td class=3D"confluenceTd">
+<p>ProServ - Suspicious Activity Buyers</p></td>
+<td class=3D"confluenceTd">
+<p>PROSERV_SUSPICIOUS_ACTIVITY_BUYERS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>41</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Linked - Charged Off</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_LINKED_CHARGED_OFF</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>42</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Partner Risk Mitigation</p></td>
+<td class=3D"confluenceTd">
+<p>PARTNER_RISK_MITIGATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>43</strong></p></td>
+<td class=3D"confluenceTd">
+<p>EBAY - Cross Platform</p></td>
+<td class=3D"confluenceTd">
+<p>EBAY_CROSS_PLATFORM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>44</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Debit Card</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_DEBIT_CARD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>45</strong></p></td>
+<td class=3D"confluenceTd">
+<p>TERMS - Colluding CC Balance Gamer</p></td>
+<td class=3D"confluenceTd">
+<p>TERMS_COLLUDING_CC_BALANCE_GAMER</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>46</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Unauthorized Bank Return</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNAUTHORIZED_ACH_RETURN</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>47</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - High Risk ACH Return</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_HIGH_RISK_ACH_RETURN</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>48</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Unauthorized CC Denial</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNAUTHORIZED_CC_DENIAL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>49</strong></p></td>
+<td class=3D"confluenceTd">
+<p>WEB REPORTED - Unauthorized Account Access</p></td>
+<td class=3D"confluenceTd">
+<p>WEB_REPORTED_UNAUTHORIZED_ACCOUNT_ACCESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>50</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Unresolved Merchandise Complaints</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNRESOLVED_MERCHANDISE_COMPLAINTS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>51</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Charged Off</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_CHARGED_OFF</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>52</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Unauthorized Account Access</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNAUTHORIZED_ACCOUNT_ACCESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>53</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Aged Restricted</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_AGED_RESTRICTED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>54</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT - Non-Delivery</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_NON_DELIVERY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>55</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Linked - Restricted</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_LINKED_RESTRICTED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>56</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - Activity</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>57</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT - Visa/MC Compliance</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_VISA_MC_COMPLIANCE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>58</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Linked Account</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_LINKED_RESTRICTED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>59</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Linked - Charged Off</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_LINKED_CHARGED_OFF</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>60</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Suspicious Merchant Identity</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_SUSPICIOUS_MERCHANT_IDENTITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>61</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Suspicious Sign-up</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_SUSPICIOUS_SIGN_UP</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>62</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Unauthorized Account Creation</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_UNAUTHORIZED_ACCOUNT_CREATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>63</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Spoof Malware</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_SPOOF_MALWARE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>64</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT - Prohibited Services</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_PROHIBITED_SERVICES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>65</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Spoof IP Signup</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_SPOOF_IP_SIGNUP</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>66</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Spoof IP Login</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_SPOOF_IP_LOGIN</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>67</strong></p></td>
+<td class=3D"confluenceTd">
+<p>TERMS - New UA Denied</p></td>
+<td class=3D"confluenceTd">
+<p>TERMS_NEW_UA_DENIED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>68</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Probable Unauthorized CC Registration</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_PROBABLE_UNAUTHORIZED_CC_REGISTRATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>69</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Visa/MasterCard Compliance</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_VISA_MC_COMPLIANCE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>70</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Max CC Registrations Exceeded</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_MAX_CC_REGISTRATIONS_EXCEEDED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>71</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP Account Closure</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_ACCOUNT_CLOSURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>72</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP No Account Closure Warning</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_NO_ACCOUNT_CLOSURE_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>73</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP No Account Closure</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_NO_ACCOUNT_CLOSURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>74</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP Transition Warning Out</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_TRANSITION_WARNING_OUT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>75</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP Transition Out</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_TRANSITION_OUT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>76</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - EU Receiving Limit Annual Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EU_RECEIVING_LIMIT_ANNUAL_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>77</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - EU Receiving Limit 45 Day Low Restriction</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EU_RECEIVING_LIMIT_45_DAY_LOW_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>78</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - EU Receiving Limit High Restriction</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EU_RECEIVING_LIMIT_HIGH_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>79</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Risk Management - Under Credit Review</p></td>
+<td class=3D"confluenceTd">
+<p>RISK_MANAGEMENT_UNDER_CREDIT_REVIEW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>80</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Risk Management - Credit Reviewed</p></td>
+<td class=3D"confluenceTd">
+<p>RISK_MANAGEMENT_CREDIT_REVIEWED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>81</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - Terminated Merchant File</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_TERMINATED_MERCHANT_FILE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>82</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - Closed Due to Credit</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_CLOSED_DUE_TO_CREDIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>83</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT - Closed Due to Credit - Equifax</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_CLOSED_DUE_TO_CREDIT_EQUIFAX</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>84</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Undefined ACH Reversal Received</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNDEFINED_ACH_REVERSAL_RECEIVED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>85</strong></p></td>
+<td class=3D"confluenceTd">
+<p>KYC Debit Card Warning</p></td>
+<td class=3D"confluenceTd">
+<p>KYC_DEBIT_CARD_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>86</strong></p></td>
+<td class=3D"confluenceTd">
+<p>KYC Debit Card Low</p></td>
+<td class=3D"confluenceTd">
+<p>KYC_DEBIT_CARD_LOW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>87</strong></p></td>
+<td class=3D"confluenceTd">
+<p>KYC Debit Card High</p></td>
+<td class=3D"confluenceTd">
+<p>KYC_DEBIT_CARD_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>88</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Get Verified Warning</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_GET_VERIFIED_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>89</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - Pending LMS</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_PENDING_LMS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>90</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Pending User Agreement Acceptance</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_PENDING_USER_AGREEMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>91</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Spoof URL Login</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_SPOOF_URL_LOGIN</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>92</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - EU Receiving Limit Documents Up Front</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EU_RECEIVING_LIMIT_DOCUMENTS_UP_FRONT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>93</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PREV-Promo/Bonus Abuse</p></td>
+<td class=3D"confluenceTd">
+<p>PREV_PROMO_BONUS_ABUSE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>94</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT - Closed due to Credit - DE</p></td>
+<td class=3D"confluenceTd">
+<p>MRCHT_CLOSED_DUE_TO_CREDIT_DE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>95</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - Consumer Alert</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_CONSUMER_ALERT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>96</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - SSNMisMatch</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_SSNMISMATCH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>97</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - No KYB Provided</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_NO_KYB_PROVIDED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>98</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT- Name Mismatch</p></td>
+<td class=3D"confluenceTd">
+<p>VETT__NAME_MISMATCH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>99</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - SafeScanHawk</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_SAFESCANHAWK</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>100</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - AUP Account Closure</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_AUP_ACCOUNT_CLOSURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>101</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - AUP No Account Closure</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_AUP_NO_ACCOUNT_CLOSURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>102</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO . Merchant Model Rules</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_MERCHANT_MODEL_RULES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>103</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Warning - Suspicious Contact</p></td>
+<td class=3D"confluenceTd">
+<p>WARNING_SUSPICIOUS_CONTACT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>104</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - Warning Activity</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_WARNING_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>105</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - Additional KYB Requirement</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_ADDITIONAL_KYB_REQUIREMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>106</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-DD Charities Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_CHARITIES_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>107</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-DD Charities</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_CHARITIES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>108</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-DD Financial Services Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_FINANCIAL_SERVICES_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>109</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-DD Financial Services</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_FINANCIAL_SERVICES</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>110</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-DD Money Service Business</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_MONEY_SERVICE_BUSINESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>111</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Cross Platform</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_CROSS_PLATFORM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>112</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - Post Activation KYB Pending</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_POST_ACTIVATION_KYB_PENDING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>113</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Unauthorized Account Access - AD</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_UNAUTHORIZED_ACCOUNT_ACCESS_AD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>114</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Confirmed Unauthorized CC Use - AD</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_CONFIRMED_UNAUTHORIZED_CC_USE_AD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>115</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - Embargoed Goods</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EMBARGOED_GOODS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>116</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - No Account Closure</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_NO_ACCOUNT_CLOSURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>117</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Entity List</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_ENTITY_LIST</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>118</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Country Sanctions</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_COUNTRY_SANCTIONS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>119</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - External Bank Inquiry</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EXTERNAL_BANK_INQUIRY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>120</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE DD - General Category</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_GENERAL_CATEGORY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>121</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - Embargoed Goods Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EMBARGOED_GOODS_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>122</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE DD - General Category Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_DD_GENERAL_CATEGORY_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>123</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Green Dot</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GREEN_DOT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>124</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - PEP - Verification ROW</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_PEP_VERIFICATION_ROW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>125</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance KYC - Debit Card</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_KYC_DEBIT_CARD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>126</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance KYC - Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_KYC_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>127</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU CIP - Low Restriction</p></td>
+<td class=3D"confluenceTd">
+<p>AU_CIP_LOW_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>128</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring Low</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_LOW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>129</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU CIP - Warning</p></td>
+<td class=3D"confluenceTd">
+<p>AU_CIP_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>130</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE-Balance Auto Transfer Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_BALANCE_AUTO_TRANSFER_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>131</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - Bank Unavailable For Auto Withdrawal</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_BANK_UNAVAILABLE_FOR_AUTO_WITHDRAWAL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>132</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring Medium</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_MEDIUM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>133</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring High</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>134</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring Warning Low</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_WARNING_LOW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>135</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring Warning Medium</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_WARNING_MEDIUM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>136</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Merchant Monitoring Warning High</p></td>
+<td class=3D"confluenceTd">
+<p>MERCHANT_MONITORING_WARNING_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>137</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Legal Entity Warning</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_LEGAL_ENTITY_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>138</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Legal Entity Low</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_LEGAL_ENTITY_LOW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>139</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Legal Entity High</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_LEGAL_ENTITY_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>140</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - New Green Dot</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_NEW_GREEN_DOT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>141</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - US IRS Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_US_IRS_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>142</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - US IRS Legacy</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_US_IRS_LEGACY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>143</strong></p></td>
+<td class=3D"confluenceTd">
+<p>EU KYB Look Back</p></td>
+<td class=3D"confluenceTd">
+<p>EU_KYB_LOOK_BACK</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>144</strong></p></td>
+<td class=3D"confluenceTd">
+<p>KYB Alias PreWarning</p></td>
+<td class=3D"confluenceTd">
+<p>KYB_ALIAS_PREWARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>145</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRO - Mobile Check Capture</p></td>
+<td class=3D"confluenceTd">
+<p>BRO_MOBILE_CHECK_CAPTURE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>146</strong></p></td>
+<td class=3D"confluenceTd">
+<p>UAC Pre Financial</p></td>
+<td class=3D"confluenceTd">
+<p>UAC_PRE_FINANCIAL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>147</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - Verification Sign Up</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_VERIFICATION_SIGN_UP</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>148</strong></p></td>
+<td class=3D"confluenceTd">
+<p>ATO - Peeked accounts</p></td>
+<td class=3D"confluenceTd">
+<p>ATO_PEEKED_ACCOUNTS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>149</strong></p></td>
+<td class=3D"confluenceTd">
+<p>ProServ - Suspected Dispute Abuse Activity</p></td>
+<td class=3D"confluenceTd">
+<p>PROSERV_SUSPECTED_DISPUTE_ABUSE_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>150</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SG KYC</p></td>
+<td class=3D"confluenceTd">
+<p>SG_KYC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>151</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - EU Warning</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_EU_WARNING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>152</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Seller linked merchant</p></td>
+<td class=3D"confluenceTd">
+<p>SELLER_LINKED_MERCHANT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>153</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - EU KYB Receiving Limit</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_EU_KYB_RECEIVING_LIMIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>154</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Others - EE Legal order received</p></td>
+<td class=3D"confluenceTd">
+<p>OTHERS_EE_LEGAL_ORDER_RECEIVED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>155</strong></p></td>
+<td class=3D"confluenceTd">
+<p>GAP - Verification</p></td>
+<td class=3D"confluenceTd">
+<p>GAP_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>156</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO Bad Sellers</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_BAD_SELLERS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>157</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUTO - Linked - Unauthorized ACH Return</p></td>
+<td class=3D"confluenceTd">
+<p>AUTO_LINKED_UNAUTHORIZED_ACH_RETURN</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>158</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Non-Customer Reported - Unauthorized CC Use</p></td>
+<td class=3D"confluenceTd">
+<p>NON_CUSTOMER_REPORTED_UNAUTHORIZED_CC_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>159</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Non-Customer Reported - Unauthorized Bank Use</p></td>
+<td class=3D"confluenceTd">
+<p>NON_CUSTOMER_REPORTED_UNAUTHORIZED_BANK_ACCOUNT_USE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>160</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU CIP - High Restriction</p></td>
+<td class=3D"confluenceTd">
+<p>AU_CIP_HIGH_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>161</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU PEP</p></td>
+<td class=3D"confluenceTd">
+<p>AU_PEP</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>162</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU KYC</p></td>
+<td class=3D"confluenceTd">
+<p>AU_KYC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>163</strong></p></td>
+<td class=3D"confluenceTd">
+<p>India Receive</p></td>
+<td class=3D"confluenceTd">
+<p>INDIA_RECEIVE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>164</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Austrac UMF-Data Collection</p></td>
+<td class=3D"confluenceTd">
+<p>AUSTRAC_UMF_DATA_COLLECTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>165</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AU Lookback-Data Collection</p></td>
+<td class=3D"confluenceTd">
+<p>AU_LOOKBACK_DATA_COLLECTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>166</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Electronic Communications Delivery Policy (ECDP) - non consent</p></td>
+<td class=3D"confluenceTd">
+<p>ELECTRONIC_COMMUNICATIONS_DELIVERY_POLICY_ECDP_NON_CONSENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>167</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance Global CIP Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_CIP_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>168</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Block Debits below threshold</p></td>
+<td class=3D"confluenceTd">
+<p>BLOCK_DEBITS_BELOW_THRESHOLD</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>169</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Global KYC Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_KYC_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>170</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Other - PayPal Policy Audit</p></td>
+<td class=3D"confluenceTd">
+<p>OTHER_PAYPAL_POLICY_AUDIT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>171</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP - Pharma</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_PHARMA</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>172</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP - High</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>173</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP - Medium</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_MEDIUM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>174</strong></p></td>
+<td class=3D"confluenceTd">
+<p>AUP - Pre-Approval</p></td>
+<td class=3D"confluenceTd">
+<p>AUP_PRE_APPROVAL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>176</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Hong Kong KYC</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_HONG_KONG_KYC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>177</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Russia KYC</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_RUSSIA_KYC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>178</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - RUSSIA KYB</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_RUSSIA_KYB</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>179</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - RUSSIA - Receive Restrict</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_RUSSIA_RECEIVE_RESTRICT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>180</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CA KYC Restriction</p></td>
+<td class=3D"confluenceTd">
+<p>CA_KYC_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>181</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CA KYC Restriction For Non Business</p></td>
+<td class=3D"confluenceTd">
+<p>CA_KYC_RESTRICTION_FOR_NON_BUSINESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>182</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PCI Compliance</p></td>
+<td class=3D"confluenceTd">
+<p>PCI_COMPLIANCE</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>183</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRO - Seller Risk Review</p></td>
+<td class=3D"confluenceTd">
+<p>SRO_SELLER_RISK_REVIEW</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>184</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CP2100</p></td>
+<td class=3D"confluenceTd">
+<p>CP2100</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>185</strong></p></td>
+<td class=3D"confluenceTd">
+<p>FATCA Verification</p></td>
+<td class=3D"confluenceTd">
+<p>FATCA_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>186</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRM - Pro-Active Loss Mitigation(PALM)</p></td>
+<td class=3D"confluenceTd">
+<p>MRM_PRO_ACTIVE_LOSS_MITIGATION_PALM</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>187</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Paypal Confirmed Charities (PPCC)</p></td>
+<td class=3D"confluenceTd">
+<p>PAYPAL_CONFIRMED_CHARITIES_PPCC</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>188</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Suspected Abusive Buyer</p></td>
+<td class=3D"confluenceTd">
+<p>SUSPECTED_ABUSIVE_BUYER</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>189</strong></p></td>
+<td class=3D"confluenceTd">
+<p>MRO - Special Industry</p></td>
+<td class=3D"confluenceTd">
+<p>MRO_SPECIAL_INDUSTRY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>190</strong></p></td>
+<td class=3D"confluenceTd">
+<p>CRS - Unauthorized Account Access</p></td>
+<td class=3D"confluenceTd">
+<p>UNAUTHORIZED_ACCOUNT_ACCESS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>191</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Russia KYC restriction</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_RUSSIA_KYC_RESTRICTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>192</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Russia Not Simplified Identified</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_RUSSIA_NOT_SIMPLIFIED_IDENTIFIED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>193</strong></p></td>
+<td class=3D"confluenceTd">
+<p>VETT - Additional Information Required</p></td>
+<td class=3D"confluenceTd">
+<p>VETT_ADDITIONAL_INFORMATION_REQUIRED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>194</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Suspicious Cash Movement</p></td>
+<td class=3D"confluenceTd">
+<p>SUSPICIOUS_CASH_MOVEMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>195</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global KYC Verification(Warning/Low/High)</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_KYC_VERIFICATION_WARNING_LOW_HIGH</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>196</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global EDD Verification</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_EDD_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>197</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PayPal Working Capital</p></td>
+<td class=3D"confluenceTd">
+<p>PAYPAL_WORKING_CAPITAL</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>198</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Partner Merchant - Additional Information Required</p></td>
+<td class=3D"confluenceTd">
+<p>PARTNER_MERCHANT_ADDITIONAL_INFORMATION_REQUIRED</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>199</strong></p></td>
+<td class=3D"confluenceTd">
+<p>General Purpose Limitation</p></td>
+<td class=3D"confluenceTd">
+<p>GENERAL_PURPOSE_LIMITATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>200</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global KYB Verification</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_KYB_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>201</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Compliance AML Enforcement</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_COMPLIANCE_AML_ENFORCEMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>202</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Global FATCA</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_FATCA</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>203</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Parting Ways</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_PARTING_WAYS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>204</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Global In-Person Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_IN_PERSON_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>205</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Global Tax Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_TAX_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>206</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Compliance - Minimal Data Collection</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_COMPLIANCE_MINIMAL_DATA_COLLECTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>207</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global CIP Stakeholder Verification</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_CIP_STAKEHOLDER_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>208</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SMB Information Request</p></td>
+<td class=3D"confluenceTd">
+<p>SMB_INFORMATION_REQUEST</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>209</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance Global Legal Entity Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_LEGAL_ENTITY_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>210</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Request Merchant Action</p></td>
+<td class=3D"confluenceTd">
+<p>REQUEST_MERCHANT_ACTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>211</strong></p></td>
+<td class=3D"confluenceTd">
+<p>High Risk Account Activity</p></td>
+<td class=3D"confluenceTd">
+<p>HIGH_RISK_ACCOUNT_ACTIVITY</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>212</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Require Customer Action</p></td>
+<td class=3D"confluenceTd">
+<p>REQUIRE_CUSTOMER_ACTION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>213</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PayPal Credit Risk Mitigation</p></td>
+<td class=3D"confluenceTd">
+<p>PAYPAL_CREDIT_RISK_MITIGATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>214</strong></p></td>
+<td class=3D"confluenceTd">
+<p>SRS - Parting Ways</p></td>
+<td class=3D"confluenceTd">
+<p>SRS_PARTING_WAYS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>215</strong></p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE - Currency Conversion</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_CURRENCY_CONVERSION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>216</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance - Global Product Provisioning Verification</p></td>
+<td class=3D"confluenceTd">
+<p>COMPLIANCE_GLOBAL_PRODUCT_PROVISIONING_VERIFICATION</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>217</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global PayPal Working Capital Info Request</p></td>
+<td class=3D"confluenceTd">
+<p>GLOBAL_PAYPAL_WORKING_CAPITAL_INFO_REQUEST</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>218</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Onboarding - Information Request</p></td>
+<td class=3D"confluenceTd">
+<p>ONBOARDING_INFORMATION_REQUEST</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>219</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Commercial - Information Request</p></td>
+<td class=3D"confluenceTd">
+<p>COMMERCIAL_INFORMATION_REQUEST</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>220</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Seller Protection Standards Monitoring</p></td>
+<td class=3D"confluenceTd">
+<p>SELLER_PROTECTION_STANDARDS_MONITORING</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>221</strong></p></td>
+<td class=3D"confluenceTd">
+<p>BRM - Brand Risk Enforcement</p></td>
+<td class=3D"confluenceTd">
+<p>BRM_BRAND_RISK_ENFORCEMENT</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>222</strong></p></td>
+<td class=3D"confluenceTd">
+<p>EDD - Compliance Investigations</p></td>
+<td class=3D"confluenceTd">
+<p>EDD_COMPLIANCE_INVESTIGATIONS</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>223</strong></p></td>
+<td class=3D"confluenceTd">
+<p>EDD - Account Onboarding Check</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>224</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Sanctions Investigations</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>225</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance Investigations</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>226</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Common Reporting Standard(Tax)</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>227</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Abusive Consumer Behaviour</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>228</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Negative Balance Collection</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>229</strong></p></td>
+<td class=3D"confluenceTd">
+<p>FLOD - Merchant Marketing Content Violation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>230</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Seller Risk Mitigation - Managed Path(NLM Only)</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>231</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance Investigations - Temp Block</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>232</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Business Shutdown Part Ways</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>233</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Information Request</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>234</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Minimal Account Creation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>235</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Parting Ways</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>236</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Seller Performance Monitoring</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>237</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Receivable Repayment Abuse</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>238</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Pay Later</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>239</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Crypto Transfers Risk Mitigation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>240</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Wet Signature</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>241</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Investigations - TEX</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>242</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Cyber Fraud Investigations</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>243</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Financial Crime Intelligence &amp; Investigations</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>244</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Investigations - Offset</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>245</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Global Investigations - Hold Funds</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>246</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PPC Collections</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>247</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance US CFPB Invalid Email Remediation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>248</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Compliance Global CIP Verification V2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>249</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Suspected Scam Exit</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>250</strong></p></td>
+<td class=3D"confluenceTd">
+<p>PPNB Charged-Off Accounts</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>251</strong></p></td>
+<td class=3D"confluenceTd">
+<p>UK Licensing Regulations High Risk Limitation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>252</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Non-Mandatory Information Request</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>253</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Voluntary Account Suspension</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>254</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Account Closure Notice</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>255</strong></p></td>
+<td class=3D"confluenceTd">
+<p>Unauthorised Logins</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>256</strong></p></td>
+<td class=3D"confluenceTd">
+<p>User Profile Integrity</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#d4d4d4" class=3D"confluenceTd">
+<p><strong>257</strong></p></td>
+<td class=3D"confluenceTd">
+<p>FICP customer mismatch</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p></p>
+<p></p>
+<p>Data retrieve logic is in <code>LimitationLifeCycleServiceTask</code>, w=
+hich calls the service <code>riskLimitationLifecycleService</code>.</p>
+<p>Write logic as below</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: jscript; gutter: false; theme: Default" data-theme=3D"Default">List&lt;Li=
+mitationInfo&gt; limitationInfos =3D profileInfoResponseVO.getLimitationInf=
+os();
+if (CollectionUtils.isNotEmpty(limitationInfos)) {
+=09for (LimitationInfo limitationInfo :  limitationInfos) {
+=09=09// column 1 platform
+=09=09AppUtil.appendColumnDataWithDelimiter(data, ApplicationConstants.PROF=
+ILE_PP_PLATFORM);
+=09=09// column 2 account number
+=09=09AppUtil.appendColumnDataWithDelimiter(data, limitationInfo.getAccount=
+Number());
+=09=09// column 3 Limitation Type
+=09=09AppUtil.appendColumnDataWithDelimiter(data, limitationInfo.getType())=
+;
+=09=09// column 4 Limitation Date Placed
+=09=09if(Objects.nonNull(limitationInfo.getPlacedDate())) {
+=09=09=09AppUtil.appendColumnDataWithDelimiter(data, DateUtil.convertDate(E=
+xcelDateTimeFormat,
+=09=09=09=09=09limitationInfo.getPlacedDate()));
+=09=09} else {
+=09=09=09AppUtil.appendEmptyValueToColumnWithDelimiter(data);
+=09=09}
+=09=09// column 5 Limitation Date Lifted
+=09=09if(Objects.nonNull(limitationInfo.getLiftedDate())) {
+=09=09=09AppUtil.appendColumnDataWithDelimiter(data, DateUtil.convertDate(E=
+xcelDateTimeFormat,
+=09=09=09=09=09limitationInfo.getLiftedDate()));
+=09=09} else {
+=09=09=09AppUtil.appendEmptyValueToColumnWithDelimiter(data);
+=09=09}
+=09=09// column 6 &amp; column 7 Limitation placement and Lifting
+=09=09// Note
+=09=09AppUtil.appendColumnDataWithDelimiter(data, limitationInfo.getPlacedN=
+ote());
+=09=09AppUtil.appendColumnDataWithDelimiter(data, limitationInfo.getLiftedN=
+ote());
+=09=09// column 8 access blocks
+=09=09if(Objects.nonNull(limitationInfo.getAccessBlocks())){
+=09=09=09AppUtil.appendColumnDataWithDelimiter(data,
+=09=09=09=09=09CommonJavaUtil.getConcatedStringWithDelimiter(ApplicationCon=
+stants.CSV_DELIMITER,
+=09=09=09=09=09=09=09limitationInfo.getAccessBlocks()));
+=09=09}else{
+=09=09=09AppUtil.appendEmptyValueToColumnWithDelimiter(data);
+=09=09}
+=09=09//Column 9 - Restriction Tags
+=09=09if(Objects.nonNull(limitationInfo.getTags())){
+=09=09=09AppUtil.appendColumnData(data,
+=09=09=09=09=09CommonJavaUtil.getConcatedStringWithDelimiter(ApplicationCon=
+stants.CSV_DELIMITER,
+=09=09=09=09=09=09=09limitationInfo.getTags()));
+=09=09}else{
+=09=09=09AppUtil.appendEmptyValueToColumnWithDelimiter(data);
+=09=09}
+=09=09//Column 10 -Applied By
+=09=09AppUtil.appendEmptyValueToColumnWithDelimiter(data);
+=09=09data.append(ApplicationConstants.NEW_LINE);
+=09}
+}</pre>
+</div>
+</div>
+<p></p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_4_1323825623.1751425264662
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/55ef97848a824ab5d75e88819b13b81d4dbc2b17137a98a7e0462ce674cc9230
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAA3NCSVQICAjb4U/gAAAAFVBMVEX/
+//9wcHBwcHBwcHBwcHBwcHBwcHA3RenHAAAAB3RSTlMAZoiZzN3/SzZomQAAAAlwSFlzAAALEgAA
+CxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAUdEVYdENy
+ZWF0aW9uIFRpbWUANi8xLzEzOKlF0AAAACFJREFUCJljYCATsCgwqIAZTMnMyRAhsTABCIMxkVxT
+GQCLcwHyUKXpLgAAAABJRU5ErkJggg==
+------=_Part_4_1323825623.1751425264662--

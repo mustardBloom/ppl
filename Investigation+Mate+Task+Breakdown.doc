@@ -1,0 +1,1060 @@
+Message-ID: <1258649055.5.1751425230782@df427ee979ca>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_2093401363.1751425230782"
+
+------=_Part_4_2093401363.1751425230782
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Investigation Mate Task Breakdown</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Investigation Mate Task Breakdown</h1>
+    <div class=3D"Section1">
+        <p><a class=3D"external-link" data-card-appearance=3D"inline" href=
+=3D"https://paypal-my.sharepoint.com/:x:/p/jshi3/EQq7as8HhdNCuZJdAMxhmyQBod=
+axQvR58zYiJQeF7LLWfA?e=3DEphFHs&amp;isSPOFile=3D1&amp;ovuser=3Dfb007914-602=
+0-4374-977e-21bac5f3f4c8%2Cjshi3%40paypal.com&amp;clickparams=3DeyJBcHBOYW1=
+lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI1MC8yNTAzMTMyMTAxOCIsIkhhc0ZlZG=
+VyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" rel=3D"nofollow">https://paypal-my.sharepoi=
+nt.com/:x:/p/jshi3/EQq7as8HhdNCuZJdAMxhmyQBodaxQvR58zYiJQeF7LLWfA?e=3DEphFH=
+s&amp;isSPOFile=3D1&amp;ovuser=3Dfb007914-6020-4374-977e-21bac5f3f4c8%2Cjsh=
+i3%40paypal.com&amp;clickparams=3DeyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwc=
+FZlcnNpb24iOiI1MC8yNTAzMTMyMTAxOCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D=
+</a></p>
+<h2 id=3D"InvestigationMateTaskBreakdown-TaskBreakdown">Task Breakdown</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1238" data-layout=3D"center" data-local-id=3D"3b=
+42e5ac-ccf7-4c31-a242-f2672f6b280b" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 280.0px;">
+<col style=3D"width: 228.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 216.0px;">
+<col style=3D"width: 78.0px;">
+<col style=3D"width: 125.0px;">
+<col style=3D"width: 175.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh">
+<p></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Type</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Owner</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Effort</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Priority</strong></p></th>
+<th class=3D"confluenceTh">
+<p><strong>Comment</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Overall Agent Framework</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586d2=
+bb18de50071d9360d" href=3D"https://paypal.atlassian.net/wiki/people/60586d2=
+bb18de50071d9360d?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"662662844" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jia Shi=
+</a></p></td>
+<td class=3D"confluenceTd">
+<p>6</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Raptor As Tool</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"6260316=
+326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/6260316=
+326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng L=
+iu</a></p></td>
+<td class=3D"confluenceTd">
+<p>5</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Investigation Execution API</p></td>
+<td class=3D"confluenceTd">
+<p>POST - include trigger and conversion</p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586f7=
+3b18de50071d95404" href=3D"https://paypal.atlassian.net/wiki/people/60586f7=
+3b18de50071d95404?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"656524453" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jing Zh=
+ou</a></p></td>
+<td class=3D"confluenceTd">
+<p>5</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Investigation Snapshot API</p></td>
+<td class=3D"confluenceTd">
+<p>POST - save</p>
+<p>GET - retrieve</p>
+<p>GET - retrieve list</p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586f7=
+3b18de50071d95404" href=3D"https://paypal.atlassian.net/wiki/people/60586f7=
+3b18de50071d95404?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"656524453" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jing Zh=
+ou</a></p></td>
+<td class=3D"confluenceTd">
+<p>7</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Investigation Saved Questions API</p></td>
+<td class=3D"confluenceTd">
+<p>POST - save</p>
+<p>GET - retrieve</p>
+<p>DELETE - remove</p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586f7=
+3b18de50071d95404" href=3D"https://paypal.atlassian.net/wiki/people/60586f7=
+3b18de50071d95404?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"656524453" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jing Zh=
+ou</a></p></td>
+<td class=3D"confluenceTd">
+<p>8</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Investigation Casefile Data Retrieve API</p></td>
+<td class=3D"confluenceTd">
+<p>GET - profile and transaction</p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586f7=
+3b18de50071d95404" href=3D"https://paypal.atlassian.net/wiki/people/60586f7=
+3b18de50071d95404?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"656524453" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jing Zh=
+ou</a></p></td>
+<td class=3D"confluenceTd">
+<p>6</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Investigation Raw Data API</p></td>
+<td class=3D"confluenceTd">
+<p>GET - retrieve</p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586f7=
+3b18de50071d95404" href=3D"https://paypal.atlassian.net/wiki/people/60586f7=
+3b18de50071d95404?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"656524453" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jing Zh=
+ou</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Data Retrieval Agent</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586d2=
+bb18de50071d9360d" href=3D"https://paypal.atlassian.net/wiki/people/60586d2=
+bb18de50071d9360d?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"662662844" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jia Shi=
+</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Real Time Web Inspection</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"6260316=
+326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/6260316=
+326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng L=
+iu</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Context Summary and Pre-Check Agent</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"6260316=
+326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/6260316=
+326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng L=
+iu</a></p></td>
+<td class=3D"confluenceTd">
+<p>5</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Code Execution Sandbox</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"712020:=
+2ba10bfd-8bd3-436c-af0a-79cfc3b7209e" href=3D"https://paypal.atlassian.net/=
+wiki/people/712020:2ba10bfd-8bd3-436c-af0a-79cfc3b7209e?ref=3Dconfluence" t=
+arget=3D"_blank" data-linked-resource-id=3D"1189874305" data-linked-resourc=
+e-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"htt=
+ps://paypal.atlassian.net/wiki">Jiongsheng Cai</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>QA Agent</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention current-user-mention" data-=
+account-id=3D"712020:24d25207-b364-43e9-bdda-55df06f4ee2b" href=3D"https://=
+paypal.atlassian.net/wiki/people/712020:24d25207-b364-43e9-bdda-55df06f4ee2=
+b?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"2230918050=
+" data-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo"=
+ data-base-url=3D"https://paypal.atlassian.net/wiki">Beibei Wang (CW)</a></=
+p></td>
+<td class=3D"confluenceTd">
+<p>8</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Formatting Agent</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586d2=
+bb18de50071d9360d" href=3D"https://paypal.atlassian.net/wiki/people/60586d2=
+bb18de50071d9360d?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"662662844" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jia Shi=
+</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"62603=
+16326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/62603=
+16326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resourc=
+e-id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-=
+type=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng=
+ Liu</a></p></td>
+<td class=3D"confluenceTd">
+<p>8</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Typology Implementation (Predefined questions)</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"712020:=
+2ba10bfd-8bd3-436c-af0a-79cfc3b7209e" href=3D"https://paypal.atlassian.net/=
+wiki/people/712020:2ba10bfd-8bd3-436c-af0a-79cfc3b7209e?ref=3Dconfluence" t=
+arget=3D"_blank" data-linked-resource-id=3D"1189874305" data-linked-resourc=
+e-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"htt=
+ps://paypal.atlassian.net/wiki">Jiongsheng Cai</a> <a class=3D"confluence-u=
+serlink user-mention current-user-mention" data-account-id=3D"712020:24d252=
+07-b364-43e9-bdda-55df06f4ee2b" href=3D"https://paypal.atlassian.net/wiki/p=
+eople/712020:24d25207-b364-43e9-bdda-55df06f4ee2b?ref=3Dconfluence" target=
+=3D"_blank" data-linked-resource-id=3D"2230918050" data-linked-resource-ver=
+sion=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://=
+paypal.atlassian.net/wiki">Beibei Wang (CW)</a></p></td>
+<td class=3D"confluenceTd">
+<p>8</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Buyer Overlap</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Service</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>8</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Data Agent + Teacher code reference (RAG)</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586d2=
+bb18de50071d9360d" href=3D"https://paypal.atlassian.net/wiki/people/60586d2=
+bb18de50071d9360d?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"662662844" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jia Shi=
+</a></p></td>
+<td class=3D"confluenceTd">
+<p>5</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Pharma related transaction Note / Dispute / Restriction / Email address<=
+/p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention current-user-mention" data-=
+account-id=3D"712020:24d25207-b364-43e9-bdda-55df06f4ee2b" href=3D"https://=
+paypal.atlassian.net/wiki/people/712020:24d25207-b364-43e9-bdda-55df06f4ee2=
+b?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"2230918050=
+" data-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo"=
+ data-base-url=3D"https://paypal.atlassian.net/wiki">Beibei Wang (CW)</a> <=
+a class=3D"confluence-userlink user-mention" data-account-id=3D"712020:2ba1=
+0bfd-8bd3-436c-af0a-79cfc3b7209e" href=3D"https://paypal.atlassian.net/wiki=
+/people/712020:2ba10bfd-8bd3-436c-af0a-79cfc3b7209e?ref=3Dconfluence" targe=
+t=3D"_blank" data-linked-resource-id=3D"1189874305" data-linked-resource-ve=
+rsion=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https:/=
+/paypal.atlassian.net/wiki">Jiongsheng Cai</a></p></td>
+<td class=3D"confluenceTd">
+<p>12</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Pharma DB kwd Search</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"6260316=
+326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/6260316=
+326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng L=
+iu</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Common notes inspector</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Agent</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"60586d2=
+bb18de50071d9360d" href=3D"https://paypal.atlassian.net/wiki/people/60586d2=
+bb18de50071d9360d?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"662662844" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Jia Shi=
+</a></p></td>
+<td class=3D"confluenceTd">
+<p>3</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>LLM Onboarding and GPU resource</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Deployment</p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"6260316=
+326478a00681e6052" href=3D"https://paypal.atlassian.net/wiki/people/6260316=
+326478a00681e6052?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"657330881" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Sheng L=
+iu</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Evaluation</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Deployment</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>3</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p><strong>FE</strong></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd">
+<p>30th Apr Design</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Landing Page Predefined Functions</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Predefined Question s popup</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Landing Page Result</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Summary</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Detail</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>3</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>Transaction</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Analyzer popup</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>4</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>send entire context</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>update to report</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>snapshot</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>save</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>load</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Build Own analyzer</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>1</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>api integration</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"605bf1e=
+f594be8010f48bfe1" href=3D"https://paypal.atlassian.net/wiki/people/605bf1e=
+f594be8010f48bfe1?ref=3Dconfluence" target=3D"_blank" data-linked-resource-=
+id=3D"655262667" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"userinfo" data-base-url=3D"https://paypal.atlassian.net/wiki">Ray Hua=
+ng</a></p></td>
+<td class=3D"confluenceTd">
+<p>2</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>view raw data</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p>?</p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><strong>Total FE</strong></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p><strong>21 + ?</strong></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+<td class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_4_2093401363.1751425230782--
