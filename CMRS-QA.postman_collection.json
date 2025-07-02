@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "9ed6f4b1-1e78-43f8-95ac-d7dfc25c5f55",
+		"name": "CMRS-QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32247840"
+	},
+	"item": [
+		{
+			"name": "download casefile_stage",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://msmaster.qa.paypal.com:17539/v1/compliance/casefile?documentKey=1024598&source=SCM",
+					"protocol": "https",
+					"host": [
+						"msmaster",
+						"qa",
+						"paypal",
+						"com"
+					],
+					"port": "17539",
+					"path": [
+						"v1",
+						"compliance",
+						"casefile"
+					],
+					"query": [
+						{
+							"key": "documentKey",
+							"value": "1024598"
+						},
+						{
+							"key": "source",
+							"value": "SCM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generate casefile_stage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"search_key\":\"1300369445919754625\",\n  \"search_key_type\":\"PAYPAL_ACCOUNT_NUMBER\",\n  \"search_message\":\"casefile gen test\",\n  \"search_criteria\":{\n     \"account_numbers\":[\n      {\n        \"account_number\": \"4777794806473586153\",\n        \"tenant_name\": \"PAYPAL\"\n      }\n     ], \n     \"search_entities\":[\n      \n     ],\n     \"start_date\":\"2025-05-01T00:00:00Z\",\n     \"end_date\":  \"2025-06-17T23:59:59Z\",\n     \"transaction_types\":[\"ALL\"],\n     \"transaction_statuses\":[\"ALL\"]\n  },\n  \"report_details\":{\n     \"report_id\":\"20931\",\n     \"report_file_type\":\"zip\"\n  },\n  \"source_details\":{\n     \"source_name\":\"SCM\",\n     \"user_id\":\"anxuzhang@paypal.com\",\n     \"email_notifiers\":\"anxuzhang@paypal.com\",\n     \"callback_url\":\"/v2/compliance/cases/SCM-SAR-20170928-2007/documents/499\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://msmaster.qa.paypal.com:17539/v1/compliance/casefile/",
+					"protocol": "https",
+					"host": [
+						"msmaster",
+						"qa",
+						"paypal",
+						"com"
+					],
+					"port": "17539",
+					"path": [
+						"v1",
+						"compliance",
+						"casefile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get reports",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"search_key\":\"1300369445919754625\",\n  \"search_key_type\":\"PAYPAL_ACCOUNT_NUMBER\",\n  \"search_message\":\"casefile gen test\",\n  \"search_criteria\":{\n     \"account_numbers\":[\n      {\n        \"account_number\": \"4777794806473586153\",\n        \"tenant_name\": \"PAYPAL\"\n      }\n     ], \n     \"search_entities\":[\n      \n     ],\n     \"start_date\":\"2025-05-01T00:00:00Z\",\n     \"end_date\":  \"2025-06-17T23:59:59Z\",\n     \"transaction_types\":[\"ALL\"],\n     \"transaction_statuses\":[\"ALL\"]\n  },\n  \"report_details\":{\n     \"report_id\":\"20931\",\n     \"report_file_type\":\"zip\"\n  },\n  \"source_details\":{\n     \"source_name\":\"SCM\",\n     \"user_id\":\"anxuzhang@paypal.com\",\n     \"email_notifiers\":\"anxuzhang@paypal.com\",\n     \"callback_url\":\"/v2/compliance/cases/SCM-SAR-20170928-2007/documents/499\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://msmaster.qa.paypal.com:17539/v1/compliance/casefile/",
+					"protocol": "https",
+					"host": [
+						"msmaster",
+						"qa",
+						"paypal",
+						"com"
+					],
+					"port": "17539",
+					"path": [
+						"v1",
+						"compliance",
+						"casefile",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
